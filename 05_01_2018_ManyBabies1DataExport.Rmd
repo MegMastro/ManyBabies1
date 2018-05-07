@@ -1,0 +1,141 @@
+#Check working directory
+```{r}
+getwd()
+```
+#Importing dataset
+```{r}
+#Import ManyBabies1DataExport(05-01-2018) wide dataset
+wide_dataset <- read.delim("/Users/Meghan/Documents/R_ManyBabies_Data/ManyBabies1DataExport/ManyBabiesDataExport(05-01-2018).csv",sep = ",")
+```
+#Manipulating Tobii data
+```{r}
+#Loading tidyverse package
+library(tidyr)
+library(tidyverse)
+
+#Running plyr
+library(plyr)
+
+#Renaming participant column name variable
+wide_dataset <- rename(wide_dataset, c("X" = "Participant"))
+
+#Converting from wide to long dataset and renaming variables in long dataset
+long_dataset = wide_dataset %>%
+  gather(key =trial, value = total_fixation, Total.Fixation.Duration..Include.Zeros._ADS1_ADS1_Sum:Total.Fixation.Duration..Include.Zeros._train2_train2_Sum.3, factor_key=TRUE) %>%
+  arrange(Participant, trial) %>%
+  mutate(trial = gsub("Total.Fixation.Duration..Include.Zeros._", "", trial)) %>%
+  mutate(trial = sub("_.*", "", trial)) 
+
+#Removing the "all recordings" rows
+long_dataset <- subset(long_dataset, Participant != "All Recordings")
+
+#creating new variable column for trial type
+long_dataset$trial_type <- substr(long_dataset$trial, 1,3)
+
+#moving columns around 
+long_dataset <- long_dataset [,c(1, 4, 2, 3)]
+
+#Loading dplyr
+library(dplyr)
+
+#finding the largest value within every trial 
+long_dataset_clean <- long_dataset %>%
+  dplyr::group_by(Participant, trial) %>%
+  summarize(total_fixation = max(total_fixation, na.rm=T)) 
+
+
+```
+
+```{r}
+
+```
+
+
+
+
+
+
+```{r}
+#separate(trial, into = c("trial", "BAD", "WORSE"))
+#deleting columns "BAD" and "WORSE"
+#long_dataset[[3]] <- NULL
+#long_dataset[[3]] <- NULL
+#renaming trial variables in wide dataset
+#wide_dataset <- rename(wide_dataset, c("Total.Fixation.Duration..Include.Zeros._ADS1_ADS1_Sum" = "ADS1",
+ # "Total.Fixation.Duration..Include.Zeros._ADS1_ADS1_Sum.1" = "ADS1", 
+  #"Total.Fixation.Duration..Include.Zeros._ADS1_ADS1_Sum.2" = "ADS1",
+ # "Total.Fixation.Duration..Include.Zeros._ADS1_ADS1_Sum.3" = "ADS1",
+  #"Total.Fixation.Duration..Include.Zeros._ADS2_ADS2_Sum" = "ADS2",
+ # "Total.Fixation.Duration..Include.Zeros._ADS2_ADS2_Sum.1" = "ADS2",
+ # "Total.Fixation.Duration..Include.Zeros._ADS2_ADS2_Sum.2" = "ADS2",
+ # "Total.Fixation.Duration..Include.Zeros._ADS2_ADS2_Sum.3" = "ADS2",
+  #"Total.Fixation.Duration..Include.Zeros._ADS3_ADS3_Sum" = "ADS3",
+  #"Total.Fixation.Duration..Include.Zeros._ADS3_ADS3_Sum.1" = "ADS3",
+  #"Total.Fixation.Duration..Include.Zeros._ADS3_ADS3_Sum.2" = "ADS3",
+  #"Total.Fixation.Duration..Include.Zeros._ADS3_ADS3_Sum.3" = "ADS3",
+  #"Total.Fixation.Duration..Include.Zeros._ADS4_ADS4_Sum" = "ADS4",
+  #"Total.Fixation.Duration..Include.Zeros._ADS4_ADS4_Sum.1" = "ADS4",
+  #"Total.Fixation.Duration..Include.Zeros._ADS4_ADS4_Sum.2" = "ADS4",
+  #"Total.Fixation.Duration..Include.Zeros._ADS4_ADS4_Sum.3" = "ADS4",
+  #"Total.Fixation.Duration..Include.Zeros._ADS5_ADS5_Sum" = "ADS5",
+  #"Total.Fixation.Duration..Include.Zeros._ADS5_ADS5_Sum.1" = "ADS5",
+ # "Total.Fixation.Duration..Include.Zeros._ADS5_ADS5_Sum.2" = "ADS5",
+  #"Total.Fixation.Duration..Include.Zeros._ADS5_ADS5_Sum.3" = "ADS5",
+  #"Total.Fixation.Duration..Include.Zeros._ADS6_ADS6_Sum" = "ADS6",
+  #"Total.Fixation.Duration..Include.Zeros._ADS6_ADS6_Sum.1" = "ADS6",
+  #"Total.Fixation.Duration..Include.Zeros._ADS6_ADS6_Sum.2" = "ADS6",
+  #"Total.Fixation.Duration..Include.Zeros._ADS6_ADS6_Sum.3" = "ADS6",
+  #"Total.Fixation.Duration..Include.Zeros._ADS7_ADS7_Sum" = "ADS7",
+  #"Total.Fixation.Duration..Include.Zeros._ADS7_ADS7_Sum.1" = "ADS7",
+  #"Total.Fixation.Duration..Include.Zeros._ADS7_ADS7_Sum.2" = "ADS7",
+  #"Total.Fixation.Duration..Include.Zeros._ADS7_ADS7_Sum.3" = "ADS7",
+  #"Total.Fixation.Duration..Include.Zeros._ADS8_ADS8_Sum" = "ADS8",
+  #"Total.Fixation.Duration..Include.Zeros._ADS8_ADS8_Sum.1" = "ADS8",
+  #"Total.Fixation.Duration..Include.Zeros._ADS8_ADS8_Sum.2" = "ADS8",
+  #"Total.Fixation.Duration..Include.Zeros._ADS8_ADS8_Sum.3" = "ADS8",
+  #"Total.Fixation.Duration..Include.Zeros._IDS1_IDS1_Sum" = "IDS1",
+  #"Total.Fixation.Duration..Include.Zeros._IDS1_IDS1_Sum.1" = "IDS1",
+  #"Total.Fixation.Duration..Include.Zeros._IDS1_IDS1_Sum.2" = "IDS1",
+  #"Total.Fixation.Duration..Include.Zeros._IDS1_IDS1_Sum.3" = "IDS1",
+  #"Total.Fixation.Duration..Include.Zeros._IDS2_IDS2_Sum" ="IDS2",
+  #"Total.Fixation.Duration..Include.Zeros._IDS2_IDS2_Sum.1" ="IDS2",
+  #"Total.Fixation.Duration..Include.Zeros._IDS2_IDS2_Sum.2" ="IDS2",
+  #"Total.Fixation.Duration..Include.Zeros._IDS2_IDS2_Sum.3" ="IDS2",
+  #"Total.Fixation.Duration..Include.Zeros._IDS3_IDS3_Sum" ="IDS3",
+  #"Total.Fixation.Duration..Include.Zeros._IDS3_IDS3_Sum.1" ="IDS3",
+  #"Total.Fixation.Duration..Include.Zeros._IDS3_IDS3_Sum.2" ="IDS3",
+  #"Total.Fixation.Duration..Include.Zeros._IDS3_IDS3_Sum.3" ="IDS3",
+  #"Total.Fixation.Duration..Include.Zeros._IDS4_IDS4_Sum" = "IDS4",
+  #"Total.Fixation.Duration..Include.Zeros._IDS4_IDS4_Sum.1" = "IDS4",
+  #"Total.Fixation.Duration..Include.Zeros._IDS4_IDS4_Sum.2" = "IDS4",
+  #"Total.Fixation.Duration..Include.Zeros._IDS4_IDS4_Sum.3" = "IDS4",
+  #"Total.Fixation.Duration..Include.Zeros._IDS5_IDS5_Sum" = "IDS5",
+  #"Total.Fixation.Duration..Include.Zeros._IDS5_IDS5_Sum.1" = "IDS5",
+  #"Total.Fixation.Duration..Include.Zeros._IDS5_IDS5_Sum.2" = "IDS5",
+  #"Total.Fixation.Duration..Include.Zeros._IDS5_IDS5_Sum.3" = "IDS5",
+  #"Total.Fixation.Duration..Include.Zeros._IDS6_IDS6_Sum" = "IDS6",
+  #"Total.Fixation.Duration..Include.Zeros._IDS6_IDS6_Sum.1" = "IDS6",
+  #"Total.Fixation.Duration..Include.Zeros._IDS6_IDS6_Sum.2" = "IDS6",
+  #"Total.Fixation.Duration..Include.Zeros._IDS6_IDS6_Sum.3" = "IDS6",
+  #"Total.Fixation.Duration..Include.Zeros._IDS7_IDS7_Sum" = "IDS7",
+  #"Total.Fixation.Duration..Include.Zeros._IDS7_IDS7_Sum.1" = "IDS7",
+  #"Total.Fixation.Duration..Include.Zeros._IDS7_IDS7_Sum.2" = "IDS7",
+  #"Total.Fixation.Duration..Include.Zeros._IDS7_IDS7_Sum.3" = "IDS7",
+  #"Total.Fixation.Duration..Include.Zeros._IDS8_IDS8_Sum" = "IDS8",
+  #"Total.Fixation.Duration..Include.Zeros._IDS8_IDS8_Sum.1" = "IDS8",
+  #"Total.Fixation.Duration..Include.Zeros._IDS8_IDS8_Sum.2" = "IDS8",
+  #"Total.Fixation.Duration..Include.Zeros._IDS8_IDS8_Sum.3" = "IDS8",
+  #"Total.Fixation.Duration..Include.Zeros._train1_train1_Sum" = "train1",
+  #"Total.Fixation.Duration..Include.Zeros._train1_train1_Sum.1" = "train1",
+  #"Total.Fixation.Duration..Include.Zeros._train1_train1_Sum.2" = "train1",
+  #"Total.Fixation.Duration..Include.Zeros._train1_train1_Sum.3" = "train1",
+  #"Total.Fixation.Duration..Include.Zeros._train2_train2_Sum" = "train2",
+  #"Total.Fixation.Duration..Include.Zeros._train2_train2_Sum.1" = "train2",
+  #"Total.Fixation.Duration..Include.Zeros._train2_train2_Sum.2" = "train2",
+  #"Total.Fixation.Duration..Include.Zeros._train2_train2_Sum.3" = "train2"))
+```
+
+
+
+
+
