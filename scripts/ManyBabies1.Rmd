@@ -15,7 +15,21 @@ getwd()
 #import ManyBabies1DataExport(05-01-2018) wide dataset
 wide_dataset <- read.delim("../data/ManyBabiesDataExport.csv",sep = ",")
 trial_data <- read.delim("../data/individual_trial_data.csv", sep = ",")
+orders <- read.delim("../data/MB1_orders.csv", sep = ",")
+participants <- read.delim("../data/MB1_MasterSubjectList.csv", sep = ",")
+
 ```
+
+#Cleaning participant data
+```{r}
+participants <- participants %>%
+  mutate(subid = paste(MB_group_6_vs_12, subid..ManyBabies., sep = "_")) %>%
+  mutate(order = trial_order_manybabies) %>%
+  select(subid, order)
+
+```
+
+
 #Manipulating Tobii data
 ```{r}
 #loading tidyr & tidyverse packages
@@ -73,8 +87,25 @@ long_dataset_clean <- long_dataset_clean [,c(4, 3, 1, 2)]
 long_dataset_clean$trial_type[long_dataset_clean$trial_type == "tra"] <- "training"
 ```
 
-#Merging with individual trial data
+#Cleaning trial data
+
 ```{r}
+trial_data <- trial_data %>%
+  mutate(subid = as.factor(subid)) %>%
+  mutate(trial_type = as.factor(trial_type)) %>%
+  mutate(trial_num = as.numeric(trial_num))
+
+```
+
+
+
+#Merging Tobii with participants and order
+```{r}
+
+long_dataset_clean <- long_dataset_clean %>%
+  left_join(participants) %>%
+  left_join(orders) %>%
+  left_join(trial_data)
 
 ```
 
