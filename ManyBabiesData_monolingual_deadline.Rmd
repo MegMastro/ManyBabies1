@@ -1,0 +1,99 @@
+---
+title: "R Notebook"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+#Check working directory
+```{r}
+getwd()
+```
+#Importing dataset
+```{r}
+#import ManyBabies1DataExport(05-01-2018) wide dataset
+wide_dataset <- read.delim("/Users/Meghan/Documents/R_ManyBabies_Data/ManyBabies1DataExport/ManyBabiesDataExport(05-01-2018).csv",sep = ",")
+```
+#Manipulating Tobii data
+```{r}
+#loading tidyr & tidyverse packages
+library(tidyr)
+library(tidyverse)
+
+#running plyr & dplyr packages
+library(plyr)
+library(dplyr)
+
+#renaming participant column name variable
+wide_dataset <- rename(wide_dataset, c("X" = "Participant"))
+
+#converting from wide to long dataset and renaming variables in long dataset
+long_dataset = wide_dataset %>%
+ gather(key =trial, value = total_fixation, Total.Fixation.Duration..Include.Zeros._ADS1_ADS1_Sum:Total.Fixation.Duration..Include.Zeros._train2_train2_Sum.3, factor_key=TRUE) %>%
+  arrange(Participant, trial) %>%
+  mutate(trial = gsub("Total.Fixation.Duration..Include.Zeros._", "", trial)) %>%
+  mutate(trial = sub("_.*", "", trial)) 
+
+#removing the "all recordings" rows
+long_dataset <- subset(long_dataset, Participant != "All Recordings")
+
+#creating new variable column for trial type
+long_dataset$trial_type <- substr(long_dataset$trial, 1,3)
+
+#moving columns around 
+long_dataset <- long_dataset [,c(1, 4, 2, 3)]
+
+#finding the largest value within every trial 
+long_dataset_clean <- long_dataset %>%
+  dplyr::group_by(Participant, trial) %>%
+  dplyr::summarize(total_fixation = max(total_fixation, na.rm=T)) 
+
+#creating new variable column for trial type in new dataframe
+long_dataset_clean$trial_type <- substr(long_dataset_clean$trial, 1,3)
+
+#seperating _ into its own columns
+long_dataset_clean <- separate(long_dataset_clean, Participant, into = c("STUDY", "STUDYID", "WORSE"))
+
+#deleting columns "BAD" and "WORSE"
+long_dataset_clean[[3]] <- NULL
+
+#merging BABY and BAD column together to create Participant column
+long_dataset_clean <- transform(long_dataset_clean, Participant=paste(STUDY, STUDYID, sep="_"))
+
+#deleting individual columns "BABY" and "BAD"
+long_dataset_clean[[1]] <- NULL
+long_dataset_clean[[1]] <- NULL
+
+#reordering columns
+long_dataset_clean <- long_dataset_clean [,c(4, 3, 1, 2)]
+
+#renaming values of "tra" to "training"
+long_dataset_clean$trial_type[long_dataset_clean$trial_type == "tra"] <- "training"
+```
+#Exporting R table to Excel
+```{r}
+install.packages("readxl")
+library(readxl)
+input <- read_excel("individual_trial_data.xlsx")
+```
+
+
+
+
+
+
+```{r}
+
+```
+
+
+
+
+
+
+
+```{r}
+
+```
+
