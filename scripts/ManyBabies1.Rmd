@@ -20,6 +20,12 @@ participants <- read.delim("../data/MB1_MasterSubjectList.csv", sep = ",")
 
 ```
 
+```{r}
+#loading tidyr & tidyverse packages
+library(tidyr)
+library(tidyverse)
+```
+
 #Cleaning participant data
 ```{r}
 participants <- participants %>%
@@ -32,10 +38,6 @@ participants <- participants %>%
 
 #Manipulating Tobii data
 ```{r}
-#loading tidyr & tidyverse packages
-library(tidyr)
-library(tidyverse)
-
 #running plyr & dplyr packages
 library(plyr)
 library(dplyr)
@@ -85,6 +87,7 @@ long_dataset_clean <- long_dataset_clean [,c(4, 3, 1, 2)]
 
 #renaming values of "tra" to "training"
 long_dataset_clean$trial_type[long_dataset_clean$trial_type == "tra"] <- "training"
+
 ```
 
 #Cleaning trial data
@@ -97,11 +100,8 @@ trial_data <- trial_data %>%
 
 ```
 
-
-
 #Merging Tobii with participants and order
 ```{r}
-
 long_dataset_clean <- long_dataset_clean %>%
   left_join(participants) %>%
   left_join(orders) %>%
@@ -110,12 +110,8 @@ long_dataset_clean <- long_dataset_clean %>%
 ```
 
 
-
 #Exporting R table to .csv file
 ```{r}
-
 write.csv(long_dataset_clean, "../data/MB1_TrialData.csv", row.names = FALSE)
-
-
 ```
 
