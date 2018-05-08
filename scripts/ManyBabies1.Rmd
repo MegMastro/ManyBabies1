@@ -21,8 +21,7 @@ participants <- read.delim("../data/MB1_MasterSubjectList.csv", sep = ",")
 ```
 
 ```{r}
-#loading tidyr & tidyverse packages
-library(tidyr)
+#loading  tidyverse packages
 library(tidyverse)
 ```
 
@@ -38,12 +37,9 @@ participants <- participants %>%
 
 #Manipulating Tobii data
 ```{r}
-#running plyr & dplyr packages
-library(plyr)
-library(dplyr)
 
 #renaming participant column name variable to subid
-wide_dataset <- rename(wide_dataset, c("X" = "subid"))
+wide_dataset <- rename(wide_dataset,   subid = X)
 
 #converting from wide to long dataset and renaming variables in long dataset
 long_dataset = wide_dataset %>%
