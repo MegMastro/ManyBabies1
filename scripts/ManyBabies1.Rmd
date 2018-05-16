@@ -14,7 +14,7 @@ getwd()
 ```{r}
 #import ManyBabies1DataExport(05-01-2018) wide dataset
 wide_dataset <- read.delim("../data/ManyBabiesDataExport.csv",sep = ",")
-trial_data <- read.delim("../data/individual_trial_data.csv", sep = ",")
+trial_data <- read.delim("../data/MB1_TrialDataUpdated.csv", sep = ",", na.strings = c("NA", ""))
 orders <- read.delim("../data/MB1_orders.csv", sep = ",")
 participants <- read.delim("../data/MB1_MasterSubjectList.csv", sep = ",")
 
@@ -92,16 +92,33 @@ long_dataset_clean$trial_type[long_dataset_clean$trial_type == "tra"] <- "traini
 trial_data <- trial_data %>%
   mutate(subid = as.factor(subid)) %>%
   mutate(trial_type = as.factor(trial_type)) %>%
-  mutate(trial_num = as.numeric(trial_num))
+  mutate(trial_num = as.numeric(trial_num)) %>%
+  select(-stimulus, -looking_time, -MovieStart, -MovieEnd, -TrialTime) 
 
 ```
 
-#Merging Tobii with participants and order
+#Merging Tobii with participants and order and cleaning up file
 ```{r}
 long_dataset_clean <- long_dataset_clean %>%
   left_join(participants) %>%
   left_join(orders) %>%
-  left_join(trial_data)
+  left_join(trial_data) %>%
+  mutate(total_trial_time = as.numeric(total_trial_time)) %>%
+  rename(stimulus = trial) %>% 
+  rename(looking_time = total_fixation) %>% 
+  select(lab, subid, trial_type, stimulus, trial_num, looking_time, total_trial_time, trial_error, trial_error_type, notes) %>%
+  mutate(trial_num = trial_num -2) %>% #So first test trial is trial 1
+  arrange(subid, trial_num)
+
+long_dataset_clean$trial_num[long_dataset_clean$trial_type == "training"] <- long_dataset_clean$trial_num[long_dataset_clean$trial_type == "training"]  - 1 # Fix training trial numbering
+
+long_dataset_clean$looking_time[is.na(long_dataset_clean$total_trial_time)] <- NA # No looking with no trial time should be NAs
+
+
+#Replace NA values necessary with NC
+long_dataset_clean$looking_time <- long_dataset_clean$looking_time %>% replace_na("NC")
+long_dataset_clean$total_trial_time <- long_dataset_clean$total_trial_time %>% replace_na("NC")
+
 
 ```
 
