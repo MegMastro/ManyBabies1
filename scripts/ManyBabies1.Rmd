@@ -34,7 +34,6 @@ participants <- participants %>%
 
 ```
 
-
 #Manipulating Tobii data
 ```{r}
 
