@@ -24,14 +24,12 @@ participants <- read.delim("../data/MB1_MasterSubjectList.csv", sep = ",")
 #loading  tidyverse packages
 library(tidyverse)
 ```
-
 #Cleaning participant data
 ```{r}
 participants <- participants %>%
   mutate(subid = paste(MB_group_6_vs_12, subid..ManyBabies., sep = "_")) %>%
   mutate(order = trial_order_manybabies) %>%
   select(subid, order)
-
 ```
 
 #Manipulating Tobii data
@@ -86,7 +84,6 @@ long_dataset_clean$trial_type[long_dataset_clean$trial_type == "tra"] <- "traini
 ```
 
 #Cleaning trial data
-
 ```{r}
 trial_data <- trial_data %>%
   mutate(subid = as.factor(subid)) %>%
@@ -115,10 +112,8 @@ long_dataset_clean$looking_time[is.na(long_dataset_clean$total_trial_time)] <- N
 
 
 #Replace NA values necessary with NC
-long_dataset_clean$looking_time <- long_dataset_clean$looking_time %>% replace_na("NC")
-long_dataset_clean$total_trial_time <- long_dataset_clean$total_trial_time %>% replace_na("NC")
-
-
+replace_na(long_dataset_clean, list(looking_time = "NC"))
+replace_na(long_dataset_clean, list(total_trial_time = "NC"))
 ```
 
 
