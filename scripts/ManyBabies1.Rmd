@@ -122,7 +122,7 @@ joined_dataset_clean <- replace_na(joined_dataset_clean, list(lab = "irl-concord
 ```
 ### data checking
 ```{r}
-joined_dataset_clean %>% filter(looking_time == 0 & trial_error == "noerror") %>% View()
+joined_dataset_clean %>% filter(looking_time == 0 & trial_error == "noerror") %>% write.csv("../data/MB1_checkingerrors.csv" )
 ```
 
 
