@@ -108,9 +108,6 @@ joined_dataset_clean <- long_dataset_clean %>%
   mutate(trial_num =ifelse(trial_type =="training",trial_num-3, trial_num -2)) %>% #So first test trial is trial 1, and training trials are -2 and -1
   arrange(subid, trial_num)
 
-
-
-
 joined_dataset_clean$looking_time[is.na(joined_dataset_clean$total_trial_time)] <- NA # No looking with no trial time should be NAs
 
 #Replace NA values necessary with NC
@@ -120,17 +117,12 @@ replace_na(joined_dataset_clean, list(total_trial_time = "NC"))
 #converting all NAs in lab column to irl-concordia
 joined_dataset_clean <- replace_na(joined_dataset_clean, list(lab = "irl-concordia"))
 ```
-### data checking
+# data checking to verify that all of 0 looking time are marked as errors
 ```{r}
 joined_dataset_clean %>% filter(looking_time == 0 & trial_error == "noerror") %>% write.csv("../data/MB1_checkingerrors.csv" )
 ```
-
-
-
-
 
 #Exporting R table to .csv file
 ```{r}
 write.csv(joined_dataset_clean, "../data/MB1_TrialData.csv", row.names = FALSE)
 ```
-check noerrors with errrors
