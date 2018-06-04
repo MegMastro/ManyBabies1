@@ -6,9 +6,11 @@ output:
     df_print: paged
 ---
 
-#Check working directory
+#Check working directory and clean workspace
 ```{r}
 getwd()
+
+rm(list=ls())
 ```
 #Importing dataset
 ```{r}
@@ -30,7 +32,7 @@ library(tidyverse)
 participants <- participants %>%
   mutate(subid = paste(MB_group_6_vs_12, subid..ManyBabies., sep = "_")) %>%
   mutate(order = trial_order_manybabies) %>%
-  select(subid, order)
+  select(subid, order, lab)
 ```
 
 #Manipulating Tobii data
@@ -81,6 +83,8 @@ long_dataset_clean <- long_dataset_clean [,c(4, 3, 1, 2)]
 #renaming values of "tra" (in trial_type columns) to "training"
 long_dataset_clean$trial_type[long_dataset_clean$trial_type == "tra"] <- "training"
 
+
+
 ```
 
 #Cleaning trial data
@@ -90,20 +94,22 @@ trial_data <- trial_data %>%
   mutate(trial_type = as.factor(trial_type)) %>% 
   mutate(trial_num = as.numeric(trial_num)) %>%
     mutate(total_trial_time = as.numeric(total_trial_time)) %>%
-
-  select(-stimulus, -looking_time, -MovieStart, -MovieEnd, -TrialTime, -total_fixation) 
+  select(subid, trial_num, total_trial_time, trial_error, trial_error_type, notes) 
 
 ```
 
 #Merging Tobii with participants and order and cleaning up file
 ```{r}
-joined_dataset_clean <- long_dataset_clean %>%
+joined_dataset_clean_temp <- long_dataset_clean %>%
   left_join(participants, by ="subid") %>% # get orders for each participant
-  left_join(orders) %>% # gets trial orders
+  left_join(orders) %>%
+  rename(looking_time = total_fixation)
+
+
+joined_dataset_clean <- joined_dataset_clean_temp %>% # gets trial orders
   left_join(trial_data) %>%
   mutate(total_trial_time = as.numeric(total_trial_time)) %>%
   rename(stimulus = trial) %>% 
-  rename(looking_time = total_fixation) %>% 
   select(lab, subid, trial_type, stimulus, trial_num, looking_time, total_trial_time, trial_error, trial_error_type, notes) %>%
   mutate(trial_num =ifelse(trial_type =="training",trial_num-3, trial_num -2)) %>% #So first test trial is trial 1, and training trials are -2 and -1
   arrange(subid, trial_num)
@@ -120,6 +126,11 @@ joined_dataset_clean <- replace_na(joined_dataset_clean, list(lab = "irl-concord
 # data checking to verify that all of 0 looking time are marked as errors
 ```{r}
 joined_dataset_clean %>% filter(looking_time == 0 & trial_error == "noerror") %>% write.csv("../data/MB1_checkingerrors.csv" )
+```
+
+# Exporting just long dataset to type trial lengths into
+```{r}
+write.csv(joined_dataset_clean_temp, "../data/long_dataset_clean.csv")
 ```
 
 #Exporting R table to .csv file
