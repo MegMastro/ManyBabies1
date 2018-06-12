@@ -720,7 +720,7 @@
 "irl-concordia","MB12_S40","ADS","ADS8",15,NA,NA,"error","fussy, trial not watched",NA
 "irl-concordia","MB12_S40","IDS","IDS8",16,NA,NA,"error","fussy, trial not watched",NA
 "irl-concordia","MB12_S41","training","train2",-2,0.13,9.486,"noerror",NA,NA
-"irl-concordia","MB12_S41","training","train1",-1,0,18.045,"noerror",NA,NA
+"irl-concordia","MB12_S41","training","train1",-1,0,18.045,"error","tracking error",NA
 "irl-concordia","MB12_S41","ADS","ADS5",1,0,9.474,"error","fussy, trial not watched",NA
 "irl-concordia","MB12_S41","IDS","IDS5",2,NA,NA,"error","fussy, trial not watched",NA
 "irl-concordia","MB12_S41","IDS","IDS7",3,NA,NA,"error","fussy, trial not watched",NA
@@ -749,7 +749,7 @@
 "irl-concordia","MB12_S42","ADS","ADS4",8,0.82,4.162,"noerror",NA,NA
 "irl-concordia","MB12_S42","ADS","ADS5",9,0.97,6.53,"noerror",NA,NA
 "irl-concordia","MB12_S42","IDS","IDS5",10,0.63,5.109,"noerror",NA,NA
-"irl-concordia","MB12_S42","ADS","ADS6",11,0,4.755,"noerror",NA,NA
+"irl-concordia","MB12_S42","ADS","ADS6",11,0,4.755,"error","tracking error",NA
 "irl-concordia","MB12_S42","IDS","IDS6",12,0.35,5.258,"noerror",NA,NA
 "irl-concordia","MB12_S42","IDS","IDS7",13,0.33,5,"error","trial should have ended earlier",NA
 "irl-concordia","MB12_S42","ADS","ADS7",14,0.48,6.905,"noerror",NA,NA
