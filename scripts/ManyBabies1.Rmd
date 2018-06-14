@@ -19,6 +19,7 @@ wide_dataset <- read.delim("../data/ManyBabiesDataExport.csv",sep = ",")
 trial_data <- read.delim("../data/MB1_TrialDataUpdated.csv", sep = ",", na.strings = c("NA", ""),stringsAsFactors = F)
 orders <- read.delim("../data/MB1_orders.csv", sep = ",")
 participants <- read.delim("../data/MB1_MasterSubjectList.csv", sep = ",")
+participant_template <- read.delim("../data/ManyBabies Individual Lab Participants Data.csv", sep = ",", header = T)
 
 ```
 
@@ -29,7 +30,7 @@ library(tidyverse)
 #Cleaning participant data
 ```{r}
 #inputting subject ID from MSL with their orders and keeping only those 2 columns of information
-participants <- participants %>%
+participants2 <- participants %>%
   mutate(subid = paste(MB_group_6_vs_12, subid..ManyBabies., sep = "_")) %>%
   mutate(order = trial_order_manybabies) %>%
   select(subid, order, lab)
@@ -88,7 +89,7 @@ long_dataset_clean$trial_type[long_dataset_clean$trial_type == "tra"] <- "traini
 ```
 #cleaning MSL to remove all GazeFollowing-specific columns
 ```{r}
-participants <- participants[, ]
+participants2 <- participants2[, ]
 ```
 
 #Cleaning trial data
@@ -105,7 +106,7 @@ trial_data <- trial_data %>%
 #Merging Tobii with participants and order and cleaning up file
 ```{r}
 joined_dataset_clean_temp <- long_dataset_clean %>%
-  left_join(participants, by ="subid") %>% # get orders for each participant
+  left_join(participants2, by ="subid") %>% # get orders for each participant
   left_join(orders) %>%
   rename(looking_time = total_fixation)
 
@@ -141,3 +142,57 @@ write.csv(joined_dataset_clean_temp, "../data/long_dataset_clean.csv")
 ```{r}
 write.csv(joined_dataset_clean, "../data/MB1_TrialData.csv", row.names = FALSE)
 ```
+
+#Creating final participants file
+
+```{r}
+
+mb_columns <- colnames(participant_template)[1:49]
+
+participants_mono <- participants %>%
+  filter(lang_group  == "monolingual") %>%
+  filter(!is.na(trial_order_manybabies)) %>%
+  unite(subid, MB_group_6_vs_12, subid..ManyBabies., sep = "_", remove = T) %>%
+  select(-BABYID, -do.birth, -do.participation, -subid..GazeFollowing., -GF_group_6_vs_12, -trial_order_gazefollowing, -session_error_gazefollowing, -session_error_type_gazefollowing, -second_session_GazeFollowing) %>%
+  rename(trial_order = trial_order_manybabies) %>%
+  rename(session_error = session_error_manybabies) %>%
+  rename(session_error_type = session_error_type_manybabies) %>%
+  rename(second_session = second_session_ManyBabies) %>%
+  rename(race_ethinicty = race.ethnicity) %>%
+  rename(curr_earinfection = current_earinfection) %>%
+  mutate(notes = recode(Notes, "post-undergrad" = "RA is post-undergrad")) %>%
+  select(mb_columns) %>% # see https://gist.github.com/djhocking/62c76e63543ba9e94ebe
+  arrange(subid)
+  # 
+  # 
+  # 
+  # select(lab, subid, method, RA, age_days, trial_order, session_error, session_error_type, notes, second_session, lang_group, lang1, lang1_exposure, lang2, lang2_exposure, lang3, lang3_exposure, lang4, lang4_exposure, caregiver_seat, MacArthur_Ladder, participant_gender, race_ethnicity, parentA_gender)
+
+
+```
+
+# Write final monolingual participants to file
+```{r}
+
+write.csv(participants_mono, "../data/irl-concordia_Monolingual_Participant_Info.csv")
+
+
+```
+
+
+# Creating final trials data
+```{r}
+
+
+final_dataset_monolinguals <- joined_dataset_clean[joined_dataset_clean$subid %in% participants_mono$subid, ]
+```
+
+# Write final monolingual dataset to file
+```{r}
+
+write.csv(final_dataset_monolinguals, "../data/irl-concordia_Monolingual_Trial_Data.csv")
+
+
+```
+
+
