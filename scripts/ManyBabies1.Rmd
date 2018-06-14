@@ -86,6 +86,10 @@ long_dataset_clean$trial_type[long_dataset_clean$trial_type == "tra"] <- "traini
 
 
 ```
+#cleaning MSL to remove all GazeFollowing-specific columns
+```{r}
+participants <- participants[, ]
+```
 
 #Cleaning trial data
 ```{r}
