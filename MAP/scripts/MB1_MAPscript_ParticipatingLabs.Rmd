@@ -1,0 +1,125 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+#check working directory
+```{r}
+getwd()
+```
+#importing dataset
+```{r}
+#importing participating las spreadsheet
+wide_dataset_labs <- read.delim("/Users/Meghan/Documents/GitHub/ManyBabies1/MAP/data/ManyBabiesQuestionnaireSpreadsheetAuthoritativeMay22-2018cleaned.csv",sep = ",")
+```
+
+#loading tidyverse
+```{r}
+#loading packages
+library(tidyverse)
+library(rworldmap)
+library(ggmap)
+library(sp)
+library(maps)
+library(maptools)
+library(sf)
+library(rgeos)
+```
+#cleaning dataset to keep only relevant columns
+```{r}
+clean_wide_dataset_labs <- wide_dataset_labs[,c("labname", "University", "CityorCountry", "Longitude","Latitude")]
+
+
+
+```
+# get country from long lat coordinates
+```{r}
+
+# The single argument to this function, points, is a data.frame in which:
+#   - column 1 contains the longitude in degrees
+#   - column 2 contains the latitude in degrees
+coords2country = function(points)
+{  
+  countriesSP <- getMap(resolution='low')
+  #countriesSP <- getMap(resolution='high') #you could use high res map from rworldxtra if you were concerned about detail
+
+  # convert our list of points to a SpatialPoints object
+
+  # pointsSP = SpatialPoints(points, proj4string=CRS(" +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs +towgs84=0,0,0"))
+
+  #setting CRS directly to that from rworldmap
+  pointsSP = SpatialPoints(points, proj4string=CRS(proj4string(countriesSP)))  
+
+
+  # use 'over' to get indices of the Polygons object containing each point 
+  indices = over(pointsSP, countriesSP)
+
+  # return the ADMIN names of each country
+  indices$ADMIN  
+  #indices$ISO3 # returns the ISO3 code 
+  #indices$continent   # returns the continent (6 continent model)
+  #indices$REGION   # returns the continent (7 continent model)
+}
+```
+# get country 
+```{r}
+clean_wide_dataset_labs$country.byfunc = coords2country(clean_wide_dataset_labs[, c("Longitude", "Latitude")])
+
+clean_wide_dataset_labs$country.byfunc[clean_wide_dataset_labs$University =="University of Liverpool"] ="United Kingdom"
+
+clean_wide_dataset_labs$country = as.character(clean_wide_dataset_labs$country.byfunc)
+clean_wide_dataset_labs$country[clean_wide_dataset_labs$country.byfunc =="United Kingdom"] = "UK"
+clean_wide_dataset_labs$country[clean_wide_dataset_labs$country.byfunc =="United States of America"] = "USA"
+
+```
+#count of frequency of countries participating
+```{r}
+MB.Nlabs = clean_wide_dataset_labs %>%
+  group_by(country) %>% 
+ summarise(Nlabs= n())
+  
+
+
+```
+
+```{r}
+
+# Get world data frame
+country_shapes <- map_data("world") %>%
+    rename(country = region)
+
+print("these countries were found in the world_data but not in manybabies data")
+setdiff(country_shapes$country,MB.Nlabs$country)
+print("these countries were NOT found in the world data but in manybabies data")
+setdiff(MB.Nlabs$country,country_shapes$country)
+
+# Merge world_data and world_df
+world_data_participating_labs <- MB.Nlabs %>%
+  full_join(country_shapes, by = c("country")) %>%
+  # change NAs in frequency to 0 (to also plot countries that did not participate)
+  mutate(Nlabs = ifelse(is.na(Nlabs), 0,Nlabs))
+
+#mapping the world using ggplot
+ggplot() + 
+  geom_polygon(data = world_data_participating_labs,  aes(x = long, y = lat, group = group, fill = Nlabs)) + coord_fixed(1.3) +
+  scale_fill_continuous(low="gray76", high="firebrick", guide="colorbar",na.value="gray96")
+
+```
+
+
+```{r}
+
+
+```
+
+```{r}
+
+
+
+
+```
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
