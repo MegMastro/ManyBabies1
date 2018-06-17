@@ -18,11 +18,11 @@ wide_dataset_labs <- read.delim("/Users/Meghan/Documents/GitHub/ManyBabies1/MAP/
 library(tidyverse)
 library(rworldmap)
 library(ggmap)
-library(sp)
-library(maps)
-library(maptools)
-library(sf)
-library(rgeos)
+#library(sp)
+#library(maps)
+#library(maptools)
+#library(sf)
+#library(rgeos)
 ```
 #cleaning dataset to keep only relevant columns
 ```{r}
