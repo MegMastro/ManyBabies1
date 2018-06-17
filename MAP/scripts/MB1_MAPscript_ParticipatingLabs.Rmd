@@ -10,6 +10,8 @@ getwd()
 ```{r}
 #importing participating las spreadsheet
 wide_dataset_labs <- read.delim("/Users/Meghan/Documents/GitHub/ManyBabies1/MAP/data/ManyBabiesQuestionnaireSpreadsheetAuthoritativeMay22-2018cleaned.csv",sep = ",")
+
+cities_dataframe <- read.delim("/Users/Meghan/Documents/GitHub/ManyBabies1/MAP/data/ManyBabies_participatinglabs_cities_dataframe.csv", sep = ",")
 ```
 
 #loading tidyverse
@@ -77,15 +79,21 @@ MB.Nlabs = clean_wide_dataset_labs %>%
   group_by(country) %>% 
  summarise(Nlabs= n())
   
-
-
+```
+#count of frequency of cities particpating
+```{r}
+MBlabs.Nlabs_cities = cities_dataframe %>%
+  group_by(City) %>%
+  summarise(cities = n()) %>%
+  rename(city = City)
 ```
 
 ```{r}
 
 # Get world data frame
 country_shapes <- map_data("world") %>%
-    rename(country = region)
+    rename(country = region) %>%
+    rename (city = subregion)
 
 print("these countries were found in the world_data but not in manybabies data")
 setdiff(country_shapes$country,MB.Nlabs$country)
@@ -98,10 +106,16 @@ world_data_participating_labs <- MB.Nlabs %>%
   # change NAs in frequency to 0 (to also plot countries that did not participate)
   mutate(Nlabs = ifelse(is.na(Nlabs), 0,Nlabs))
 
+#Merge world_data and cities_dataframe
+cities_dataframe <- MBlabs.Nlabs_cities %>%
+  full_join(country_shapes, by = c("city")) %>%
+  mutate(MBlabs.Nlabs_cities = ifelse(is.na(city), 0, city))
+
 #mapping the world using ggplot
 ggplot() + 
   geom_polygon(data = world_data_participating_labs,  aes(x = long, y = lat, group = group, fill = Nlabs)) + coord_fixed(1.3) +
-  scale_fill_continuous(low="gray76", high="firebrick", guide="colorbar",na.value="gray96")
+  scale_fill_continuous(low="gray76", high="firebrick", guide="colorbar",na.value="gray96") +
+  geom_point(data = MBlabs.Nlabs_cities, aes(x = city))
 
 ```
 
