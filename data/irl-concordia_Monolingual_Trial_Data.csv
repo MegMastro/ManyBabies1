@@ -377,327 +377,327 @@
 "754","irl-concordia","MB12_S42","ADS","ADS7",14,0.48,6.905,"noerror",NA,NA
 "755","irl-concordia","MB12_S42","ADS","ADS8",15,0,4.03,"error","experimenter began trial too early",NA
 "756","irl-concordia","MB12_S42","IDS","IDS8",16,0.42,12.187,"noerror",NA,NA
-"757","irl-concordia","MB6_S01","training","train1",-2,16.66,18.05,"noerror",NA,NA
-"758","irl-concordia","MB6_S01","training","train2",-1,9.01,18.012,"error","trial should have ended earlier",NA
-"759","irl-concordia","MB6_S01","IDS","IDS1",1,13.84,18.053,"noerror",NA,NA
-"760","irl-concordia","MB6_S01","ADS","ADS1",2,14.91,18.059,"noerror",NA,NA
-"761","irl-concordia","MB6_S01","IDS","IDS2",3,8.03,14.417,"noerror",NA,NA
-"762","irl-concordia","MB6_S01","ADS","ADS2",4,6.23,10.915,"noerror",NA,NA
-"763","irl-concordia","MB6_S01","ADS","ADS3",5,5.01,18.054,"error","trial should have ended earlier",NA
-"764","irl-concordia","MB6_S01","IDS","IDS3",6,6.05,10.533,"noerror",NA,NA
-"765","irl-concordia","MB6_S01","IDS","IDS4",7,3.38,7.669,"noerror",NA,NA
-"766","irl-concordia","MB6_S01","ADS","ADS4",8,4.21,7.792,"noerror",NA,NA
-"767","irl-concordia","MB6_S01","ADS","ADS5",9,5.61,10.883,"noerror",NA,NA
-"768","irl-concordia","MB6_S01","IDS","IDS5",10,13.92,18.061,"noerror",NA,NA
-"769","irl-concordia","MB6_S01","ADS","ADS6",11,2.83,7.331,"noerror",NA,NA
-"770","irl-concordia","MB6_S01","IDS","IDS6",12,8.39,18.052,"error","trial should have ended earlier",NA
-"771","irl-concordia","MB6_S01","IDS","IDS7",13,10.68,18.058,"noerror",NA,NA
-"772","irl-concordia","MB6_S01","ADS","ADS7",14,3.01,9.277,"error","experimenter ended trial too early",NA
-"773","irl-concordia","MB6_S01","ADS","ADS8",15,6.97,12.693,"noerror",NA,NA
-"774","irl-concordia","MB6_S01","IDS","IDS8",16,6.69,9.918,"noerror",NA,NA
-"793","irl-concordia","MB6_S03","training","train2",-2,17.29,18.059,"noerror",NA,NA
-"794","irl-concordia","MB6_S03","training","train1",-1,11.04,18.056,"noerror",NA,NA
-"795","irl-concordia","MB6_S03","ADS","ADS5",1,2.93,10.078,"noerror",NA,NA
-"796","irl-concordia","MB6_S03","IDS","IDS5",2,4.86,8.64,"noerror",NA,NA
-"797","irl-concordia","MB6_S03","IDS","IDS7",3,1.13,8.156,"noerror",NA,NA
-"798","irl-concordia","MB6_S03","ADS","ADS7",4,5.19,10.011,"noerror",NA,NA
-"799","irl-concordia","MB6_S03","IDS","IDS1",5,4.82,13.828,"error","trial should have ended earlier",NA
-"800","irl-concordia","MB6_S03","ADS","ADS1",6,2.26,7.205,"noerror",NA,NA
-"801","irl-concordia","MB6_S03","IDS","IDS3",7,2.86,9.31,"noerror",NA,NA
-"802","irl-concordia","MB6_S03","ADS","ADS3",8,2.65,6.926,"noerror",NA,NA
-"803","irl-concordia","MB6_S03","IDS","IDS2",9,9.9,14.677,"noerror",NA,NA
-"804","irl-concordia","MB6_S03","ADS","ADS2",10,12.24,18.056,"noerror",NA,NA
-"805","irl-concordia","MB6_S03","ADS","ADS4",11,2.03,8.121,"noerror",NA,NA
-"806","irl-concordia","MB6_S03","IDS","IDS4",12,0.47,10.225,"noerror",NA,NA
-"807","irl-concordia","MB6_S03","ADS","ADS6",13,3.05,8.536,"noerror",NA,NA
-"808","irl-concordia","MB6_S03","IDS","IDS6",14,2.64,5.565,"error","experimenter ended trial too early",NA
-"809","irl-concordia","MB6_S03","ADS","ADS8",15,0.67,5.536,"noerror",NA,NA
-"810","irl-concordia","MB6_S03","IDS","IDS8",16,0.48,14.496,"error","trial should have ended earlier",NA
-"811","irl-concordia","MB6_S04","training","train2",-2,15.35,18.064,"noerror",NA,NA
-"812","irl-concordia","MB6_S04","training","train1",-1,1.37,7.213,"error","experimenter ended trial too early",NA
-"813","irl-concordia","MB6_S04","ADS","ADS1",1,9.31,18.063,"noerror",NA,NA
-"814","irl-concordia","MB6_S04","IDS","IDS1",2,11.57,18.033,"noerror",NA,NA
-"815","irl-concordia","MB6_S04","ADS","ADS2",3,14.57,18.049,"noerror",NA,NA
-"816","irl-concordia","MB6_S04","IDS","IDS2",4,9.08,18.053,"noerror",NA,NA
-"817","irl-concordia","MB6_S04","IDS","IDS3",5,11.21,18.053,"noerror",NA,NA
-"818","irl-concordia","MB6_S04","ADS","ADS3",6,0.18,15.873,"error","trial should have ended earlier",NA
-"819","irl-concordia","MB6_S04","ADS","ADS4",7,8.76,14.326,"error","trial should have ended earlier",NA
-"820","irl-concordia","MB6_S04","IDS","IDS4",8,3.28,10.4,"noerror",NA,NA
-"821","irl-concordia","MB6_S04","IDS","IDS5",9,2.65,12.128,"noerror",NA,NA
-"822","irl-concordia","MB6_S04","ADS","ADS5",10,2.62,7.243,"noerror",NA,NA
-"823","irl-concordia","MB6_S04","IDS","IDS6",11,2.78,8.061,"error","experimenter ended trial too early",NA
-"824","irl-concordia","MB6_S04","ADS","ADS6",12,4.3,16.089,"noerror",NA,NA
-"825","irl-concordia","MB6_S04","ADS","ADS7",13,5.78,18.054,"error","trial should have ended earlier",NA
-"826","irl-concordia","MB6_S04","IDS","IDS7",14,7.42,11.543,"noerror",NA,NA
-"827","irl-concordia","MB6_S04","IDS","IDS8",15,10.38,11.124,"error","experimenter ended trial too early",NA
-"828","irl-concordia","MB6_S04","ADS","ADS8",16,1.21,6.443,"noerror",NA,NA
-"829","irl-concordia","MB6_S05","training","train1",-2,4.38,16.8,"noerror",NA,NA
-"830","irl-concordia","MB6_S05","training","train2",-1,0,3.368,"error","experimenter began trial too early",NA
-"831","irl-concordia","MB6_S05","IDS","IDS5",1,15.13,18.058,"noerror",NA,NA
-"832","irl-concordia","MB6_S05","ADS","ADS5",2,10.12,15.268,"noerror",NA,NA
-"833","irl-concordia","MB6_S05","ADS","ADS7",3,2.36,12.377,"noerror",NA,NA
-"834","irl-concordia","MB6_S05","IDS","IDS7",4,0,8.908,"error","tracking error",NA
-"835","irl-concordia","MB6_S05","ADS","ADS1",5,2.38,8.04,"noerror",NA,NA
-"836","irl-concordia","MB6_S05","IDS","IDS1",6,3.65,9.762,"noerror",NA,NA
-"837","irl-concordia","MB6_S05","ADS","ADS3",7,2.48,8,"noerror",NA,NA
-"838","irl-concordia","MB6_S05","IDS","IDS3",8,3.96,9.659,"noerror",NA,NA
-"839","irl-concordia","MB6_S05","ADS","ADS2",9,0.59,7.04,"noerror",NA,NA
-"840","irl-concordia","MB6_S05","IDS","IDS2",10,5.61,9.251,"noerror",NA,NA
-"841","irl-concordia","MB6_S05","IDS","IDS4",11,6.87,10.603,"noerror",NA,NA
-"842","irl-concordia","MB6_S05","ADS","ADS4",12,4,7.662,"noerror",NA,NA
-"843","irl-concordia","MB6_S05","IDS","IDS6",13,7.03,13.939,"noerror",NA,NA
-"844","irl-concordia","MB6_S05","ADS","ADS6",14,3.63,8.174,"noerror",NA,NA
-"845","irl-concordia","MB6_S05","IDS","IDS8",15,3.89,8.177,"noerror",NA,NA
-"846","irl-concordia","MB6_S05","ADS","ADS8",16,1.37,7.519,"noerror",NA,NA
-"865","irl-concordia","MB6_S07","training","train2",-2,15.06,18.063,"noerror",NA,NA
-"866","irl-concordia","MB6_S07","training","train1",-1,12.44,18.057,"noerror",NA,NA
-"867","irl-concordia","MB6_S07","ADS","ADS1",1,10.29,18.054,"noerror",NA,NA
-"868","irl-concordia","MB6_S07","IDS","IDS1",2,11.13,18.057,"noerror",NA,NA
-"869","irl-concordia","MB6_S07","ADS","ADS2",3,7.39,18.055,"noerror",NA,NA
-"870","irl-concordia","MB6_S07","IDS","IDS2",4,8.79,17.945,"noerror",NA,NA
-"871","irl-concordia","MB6_S07","IDS","IDS3",5,9.97,18.067,"noerror",NA,NA
-"872","irl-concordia","MB6_S07","ADS","ADS3",6,5.95,15.977,"error","trial should have ended earlier",NA
-"873","irl-concordia","MB6_S07","ADS","ADS4",7,4.19,10.067,"noerror",NA,NA
-"874","irl-concordia","MB6_S07","IDS","IDS4",8,3.34,8.156,"noerror",NA,NA
-"875","irl-concordia","MB6_S07","IDS","IDS5",9,2.32,8.476,"noerror",NA,NA
-"876","irl-concordia","MB6_S07","ADS","ADS5",10,4.44,13.102,"noerror",NA,NA
-"877","irl-concordia","MB6_S07","IDS","IDS6",11,2.68,6.594,"noerror",NA,NA
-"878","irl-concordia","MB6_S07","ADS","ADS6",12,2.49,18.055,"noerror",NA,NA
-"879","irl-concordia","MB6_S07","ADS","ADS7",13,1.22,10.478,"noerror",NA,"baby was half looking, red fixation point not found"
-"880","irl-concordia","MB6_S07","IDS","IDS7",14,4.1,18.054,"error","trial should have ended earlier",NA
-"881","irl-concordia","MB6_S07","IDS","IDS8",15,3.77,8.436,"noerror",NA,NA
-"882","irl-concordia","MB6_S07","ADS","ADS8",16,5.88,13.226,"noerror",NA,NA
-"901","irl-concordia","MB6_S09","training","train2",-2,17.55,21.067,"noerror",NA,NA
-"902","irl-concordia","MB6_S09","training","train1",-1,18.01,18.043,"noerror",NA,NA
-"903","irl-concordia","MB6_S09","ADS","ADS5",1,15.41,18.071,"noerror",NA,NA
-"904","irl-concordia","MB6_S09","IDS","IDS5",2,14.45,18.057,"noerror",NA,NA
-"905","irl-concordia","MB6_S09","IDS","IDS7",3,14.71,18.055,"noerror",NA,NA
-"906","irl-concordia","MB6_S09","ADS","ADS7",4,0,2.546,"error","experimenter began trial too early",NA
-"907","irl-concordia","MB6_S09","IDS","IDS1",5,11.34,17.491,"noerror",NA,NA
-"908","irl-concordia","MB6_S09","ADS","ADS1",6,13.43,18.02,"noerror",NA,NA
-"909","irl-concordia","MB6_S09","IDS","IDS3",7,13.88,18.05,"noerror",NA,NA
-"910","irl-concordia","MB6_S09","ADS","ADS3",8,3.43,8.239,"noerror",NA,NA
-"911","irl-concordia","MB6_S09","IDS","IDS2",9,4.53,8.235,"noerror",NA,NA
-"912","irl-concordia","MB6_S09","ADS","ADS2",10,1.16,5.36,"noerror",NA,NA
-"913","irl-concordia","MB6_S09","ADS","ADS4",11,4.99,10.537,"noerror",NA,NA
-"914","irl-concordia","MB6_S09","IDS","IDS4",12,4.24,9.134,"noerror",NA,NA
-"915","irl-concordia","MB6_S09","ADS","ADS6",13,2.76,7.078,"noerror",NA,NA
-"916","irl-concordia","MB6_S09","IDS","IDS6",14,3.04,6.206,"noerror",NA,NA
-"917","irl-concordia","MB6_S09","ADS","ADS8",15,5.55,12.274,"noerror",NA,NA
-"918","irl-concordia","MB6_S09","IDS","IDS8",16,2.93,6.771,"noerror",NA,NA
-"919","irl-concordia","MB6_S10","training","train1",-2,12.37,13.15,"error","experimenter ended trial too early",NA
-"920","irl-concordia","MB6_S10","training","train2",-1,10.25,12.783,"error","experimenter ended trial too early",NA
-"921","irl-concordia","MB6_S10","IDS","IDS1",1,16.75,18.031,"noerror",NA,NA
-"922","irl-concordia","MB6_S10","ADS","ADS1",2,16.49,18.059,"noerror",NA,NA
-"923","irl-concordia","MB6_S10","IDS","IDS2",3,12.19,17.702,"noerror",NA,NA
-"924","irl-concordia","MB6_S10","ADS","ADS2",4,2.74,7.262,"noerror",NA,NA
-"925","irl-concordia","MB6_S10","ADS","ADS3",5,4.84,8.236,"noerror",NA,NA
-"926","irl-concordia","MB6_S10","IDS","IDS3",6,3.47,7.28,"noerror",NA,NA
-"927","irl-concordia","MB6_S10","IDS","IDS4",7,3.81,7.274,"noerror",NA,NA
-"928","irl-concordia","MB6_S10","ADS","ADS4",8,2.96,6.955,"noerror",NA,NA
-"929","irl-concordia","MB6_S10","ADS","ADS5",9,2.62,6.304,"noerror",NA,NA
-"930","irl-concordia","MB6_S10","IDS","IDS5",10,1.79,5.234,"noerror",NA,NA
-"931","irl-concordia","MB6_S10","ADS","ADS6",11,2.43,5.627,"noerror",NA,NA
-"932","irl-concordia","MB6_S10","IDS","IDS6",12,2.05,5.083,"noerror",NA,NA
-"933","irl-concordia","MB6_S10","IDS","IDS7",13,1.78,4.975,"noerror",NA,NA
-"934","irl-concordia","MB6_S10","ADS","ADS7",14,2.54,5.258,"noerror",NA,NA
-"935","irl-concordia","MB6_S10","ADS","ADS8",15,4.36,7.293,"noerror",NA,NA
-"936","irl-concordia","MB6_S10","IDS","IDS8",16,3.03,6.851,"noerror",NA,NA
-"937","irl-concordia","MB6_S11","training","train2",-2,15.25,18.065,"noerror",NA,NA
-"938","irl-concordia","MB6_S11","training","train1",-1,7.47,11.535,"noerror",NA,NA
-"939","irl-concordia","MB6_S11","ADS","ADS1",1,14.13,18.052,"noerror",NA,NA
-"940","irl-concordia","MB6_S11","IDS","IDS1",2,3.53,7.593,"noerror",NA,NA
-"941","irl-concordia","MB6_S11","ADS","ADS2",3,1.73,5.212,"noerror",NA,NA
-"942","irl-concordia","MB6_S11","IDS","IDS2",4,6.94,10.935,"noerror",NA,NA
-"943","irl-concordia","MB6_S11","IDS","IDS3",5,2.8,7.659,"noerror",NA,NA
-"944","irl-concordia","MB6_S11","ADS","ADS3",6,0.98,6.789,"noerror",NA,NA
-"945","irl-concordia","MB6_S11","ADS","ADS4",7,1.95,7.724,"noerror",NA,NA
-"946","irl-concordia","MB6_S11","IDS","IDS4",8,1.17,6.953,"noerror",NA,NA
-"947","irl-concordia","MB6_S11","IDS","IDS5",9,0.6,6.813,"noerror",NA,NA
-"948","irl-concordia","MB6_S11","ADS","ADS5",10,1.1,14.504,"error","experimenter began trial too early",NA
-"949","irl-concordia","MB6_S11","IDS","IDS6",11,0,18.052,"error","parent stopped the study",NA
-"950","irl-concordia","MB6_S11","ADS","ADS6",12,NA,NA,"error","fussy, trial not watched",NA
-"951","irl-concordia","MB6_S11","ADS","ADS7",13,NA,NA,"error","fussy, trial not watched",NA
-"952","irl-concordia","MB6_S11","IDS","IDS7",14,NA,NA,"error","fussy, trial not watched",NA
-"953","irl-concordia","MB6_S11","IDS","IDS8",15,NA,NA,"error","fussy, trial not watched",NA
-"954","irl-concordia","MB6_S11","ADS","ADS8",16,NA,NA,"error","fussy, trial not watched",NA
-"955","irl-concordia","MB6_S12","training","train1",-2,18.07,18.069,"noerror",NA,NA
-"956","irl-concordia","MB6_S12","training","train2",-1,18.04,18.053,"noerror",NA,NA
-"957","irl-concordia","MB6_S12","IDS","IDS5",1,17.43,18.06,"noerror",NA,NA
-"958","irl-concordia","MB6_S12","ADS","ADS5",2,7.38,18.053,"error","trial should have ended earlier",NA
-"959","irl-concordia","MB6_S12","ADS","ADS7",3,5.7,18.052,"error","trial should have ended earlier",NA
-"960","irl-concordia","MB6_S12","IDS","IDS7",4,0,5.631,"error","experimenter began trial too early",NA
-"961","irl-concordia","MB6_S12","ADS","ADS1",5,5.92,5.95,"error","experimenter ended trial too early",NA
-"962","irl-concordia","MB6_S12","IDS","IDS1",6,9.67,18.054,"error","trial should have ended earlier",NA
-"963","irl-concordia","MB6_S12","ADS","ADS3",7,1.22,11.767,"error","trial should have ended earlier",NA
-"964","irl-concordia","MB6_S12","IDS","IDS3",8,18.06,18.057,"noerror",NA,NA
-"965","irl-concordia","MB6_S12","ADS","ADS2",9,2.35,8.302,"noerror",NA,NA
-"966","irl-concordia","MB6_S12","IDS","IDS2",10,3.5,7.338,"error","experimenter ended trial too early",NA
-"967","irl-concordia","MB6_S12","IDS","IDS4",11,1.73,8.505,"error","trial should have ended earlier",NA
-"968","irl-concordia","MB6_S12","ADS","ADS4",12,3.31,18.053,"error","experimenter began trial too early",NA
-"969","irl-concordia","MB6_S12","IDS","IDS6",13,11.69,18.052,"error","trial should have ended earlier",NA
-"970","irl-concordia","MB6_S12","ADS","ADS6",14,1.62,13.15,"error","trial should have ended earlier",NA
-"971","irl-concordia","MB6_S12","IDS","IDS8",15,1.11,10.981,"error","trial should have ended earlier",NA
-"972","irl-concordia","MB6_S12","ADS","ADS8",16,0.86,11.894,"error","trial should have ended earlier",NA
-"973","irl-concordia","MB6_S13","training","train1",-2,3.28,7.383,"noerror",NA,NA
-"974","irl-concordia","MB6_S13","training","train2",-1,2.03,6.146,"noerror",NA,NA
-"975","irl-concordia","MB6_S13","IDS","IDS5",1,17.85,18.055,"noerror",NA,NA
-"976","irl-concordia","MB6_S13","ADS","ADS5",2,3.56,8.274,"noerror",NA,NA
-"977","irl-concordia","MB6_S13","ADS","ADS7",3,3.8,6.893,"error","experimenter ended trial too early",NA
-"978","irl-concordia","MB6_S13","IDS","IDS7",4,5.15,9.199,"noerror",NA,NA
-"979","irl-concordia","MB6_S13","ADS","ADS1",5,3.03,7.219,"error","experimenter began trial too early",NA
-"980","irl-concordia","MB6_S13","IDS","IDS1",6,2.07,6.467,"error","experimenter began trial too early",NA
-"981","irl-concordia","MB6_S13","ADS","ADS3",7,3.71,7.355,"error","experimenter ended trial too early",NA
-"982","irl-concordia","MB6_S13","IDS","IDS3",8,1.05,5.82,"error","experimenter ended trial too early",NA
-"983","irl-concordia","MB6_S13","ADS","ADS2",9,1.38,5.181,"noerror",NA,NA
-"984","irl-concordia","MB6_S13","IDS","IDS2",10,0.93,4.979,"noerror",NA,NA
-"985","irl-concordia","MB6_S13","IDS","IDS4",11,0.64,5.457,"noerror",NA,NA
-"986","irl-concordia","MB6_S13","ADS","ADS4",12,0.8,4.958,"noerror",NA,NA
-"987","irl-concordia","MB6_S13","IDS","IDS6",13,0.78,4.871,"noerror",NA,NA
-"988","irl-concordia","MB6_S13","ADS","ADS6",14,2.97,8.389,"noerror",NA,NA
-"989","irl-concordia","MB6_S13","IDS","IDS8",15,0.58,5.875,"error","experimenter began trial too early",NA
-"990","irl-concordia","MB6_S13","ADS","ADS8",16,2.67,5.038,"error","experimenter ended trial too early",NA
-"991","irl-concordia","MB6_S14","training","train2",-2,3.47,7.346,"noerror",NA,NA
-"992","irl-concordia","MB6_S14","training","train1",-1,3.06,6.911,"noerror",NA,NA
-"993","irl-concordia","MB6_S14","ADS","ADS5",1,4.46,10.298,"noerror",NA,NA
-"994","irl-concordia","MB6_S14","IDS","IDS5",2,3.77,9.131,"noerror",NA,NA
-"995","irl-concordia","MB6_S14","IDS","IDS7",3,1.6,8.513,"noerror",NA,NA
-"996","irl-concordia","MB6_S14","ADS","ADS7",4,6.73,12.529,"noerror",NA,NA
-"997","irl-concordia","MB6_S14","IDS","IDS1",5,2.42,9.064,"noerror",NA,NA
-"998","irl-concordia","MB6_S14","ADS","ADS1",6,1.96,6.134,"noerror",NA,NA
-"999","irl-concordia","MB6_S14","IDS","IDS3",7,1.88,7.323,"noerror",NA,NA
-"1000","irl-concordia","MB6_S14","ADS","ADS3",8,1.3,7.187,"noerror",NA,NA
-"1001","irl-concordia","MB6_S14","IDS","IDS2",9,2.73,15.072,"noerror",NA,NA
-"1002","irl-concordia","MB6_S14","ADS","ADS2",10,3.26,10.054,"noerror",NA,NA
-"1003","irl-concordia","MB6_S14","ADS","ADS4",11,0,8.207,"error","experimenter began trial too early",NA
-"1004","irl-concordia","MB6_S14","IDS","IDS4",12,1.17,5.579,"noerror",NA,NA
-"1005","irl-concordia","MB6_S14","ADS","ADS6",13,1.08,6.217,"noerror",NA,NA
-"1006","irl-concordia","MB6_S14","IDS","IDS6",14,4.15,14.55,"noerror",NA,NA
-"1007","irl-concordia","MB6_S14","ADS","ADS8",15,3.39,8.151,"noerror",NA,NA
-"1008","irl-concordia","MB6_S14","IDS","IDS8",16,0,5.815,"error","experimenter began trial too early",NA
-"1009","irl-concordia","MB6_S15","training","train1",-2,7.24,11.937,"noerror",NA,NA
-"1010","irl-concordia","MB6_S15","training","train2",-1,3.22,6.322,"noerror",NA,NA
-"1011","irl-concordia","MB6_S15","IDS","IDS1",1,12.72,18.043,"noerror",NA,NA
-"1012","irl-concordia","MB6_S15","ADS","ADS1",2,9.88,16.001,"noerror",NA,NA
-"1013","irl-concordia","MB6_S15","IDS","IDS2",3,11.03,14.851,"noerror",NA,NA
-"1014","irl-concordia","MB6_S15","ADS","ADS2",4,7.06,17.212,"noerror",NA,NA
-"1015","irl-concordia","MB6_S15","ADS","ADS3",5,2.37,7.12,"noerror",NA,NA
-"1016","irl-concordia","MB6_S15","IDS","IDS3",6,9.14,14.675,"noerror",NA,NA
-"1017","irl-concordia","MB6_S15","IDS","IDS4",7,4.75,11.609,"noerror",NA,NA
-"1018","irl-concordia","MB6_S15","ADS","ADS4",8,1.05,8.574,"error","experimenter began trial too early",NA
-"1019","irl-concordia","MB6_S15","ADS","ADS5",9,5.72,10.238,"error","trial should have ended earlier",NA
-"1020","irl-concordia","MB6_S15","IDS","IDS5",10,1.88,6.231,"error","experimenter began trial too early",NA
-"1021","irl-concordia","MB6_S15","ADS","ADS6",11,1.1,7.429,"error","experimenter began trial too early",NA
-"1022","irl-concordia","MB6_S15","IDS","IDS6",12,1.28,7.916,"error","experimenter began trial too early",NA
-"1023","irl-concordia","MB6_S15","IDS","IDS7",13,4.69,7.671,"error","experimenter ended trial too early",NA
-"1024","irl-concordia","MB6_S15","ADS","ADS7",14,1.4,4.447,"noerror",NA,NA
-"1025","irl-concordia","MB6_S15","ADS","ADS8",15,0.35,3.975,"noerror",NA,NA
-"1026","irl-concordia","MB6_S15","IDS","IDS8",16,2.39,6.153,"noerror",NA,NA
-"1027","irl-concordia","MB6_S16","training","train2",-2,10.94,14.905,"noerror",NA,NA
-"1028","irl-concordia","MB6_S16","training","train1",-1,2.4,7.519,"noerror",NA,NA
-"1029","irl-concordia","MB6_S16","ADS","ADS1",1,8.83,13.477,"noerror",NA,NA
-"1030","irl-concordia","MB6_S16","IDS","IDS1",2,3.21,7.676,"noerror",NA,NA
-"1031","irl-concordia","MB6_S16","ADS","ADS2",3,3.41,7.194,"noerror",NA,NA
-"1032","irl-concordia","MB6_S16","IDS","IDS2",4,2,6.817,"noerror",NA,NA
-"1033","irl-concordia","MB6_S16","IDS","IDS3",5,5.71,10.214,"noerror",NA,NA
-"1034","irl-concordia","MB6_S16","ADS","ADS3",6,3.43,6.577,"noerror",NA,NA
-"1035","irl-concordia","MB6_S16","ADS","ADS4",7,1.15,5.488,"noerror",NA,NA
-"1036","irl-concordia","MB6_S16","IDS","IDS4",8,2.61,6.46,"noerror",NA,NA
-"1037","irl-concordia","MB6_S16","IDS","IDS5",9,2.4,7.078,"noerror",NA,NA
-"1038","irl-concordia","MB6_S16","ADS","ADS5",10,5.74,8.679,"noerror",NA,NA
-"1039","irl-concordia","MB6_S16","IDS","IDS6",11,2.49,6.224,"error","experimenter ended trial too early",NA
-"1040","irl-concordia","MB6_S16","ADS","ADS6",12,2.42,6.037,"error","experimenter ended trial too early",NA
-"1041","irl-concordia","MB6_S16","ADS","ADS7",13,3.74,11.821,"error","experimenter ended trial too early",NA
-"1042","irl-concordia","MB6_S16","IDS","IDS7",14,9.25,18.048,"noerror",NA,NA
-"1043","irl-concordia","MB6_S16","IDS","IDS8",15,6.51,11.901,"error","experimenter began trial too early",NA
-"1044","irl-concordia","MB6_S16","ADS","ADS8",16,3.89,8.144,"noerror",NA,NA
-"1045","irl-concordia","MB6_S17","training","train2",-2,14.63,18.046,"noerror",NA,NA
-"1046","irl-concordia","MB6_S17","training","train1",-1,4.36,16.577,"noerror",NA,NA
-"1047","irl-concordia","MB6_S17","ADS","ADS1",1,5.86,18.047,"noerror",NA,NA
-"1048","irl-concordia","MB6_S17","IDS","IDS1",2,5.94,18.025,"error","trial should have ended earlier",NA
-"1049","irl-concordia","MB6_S17","ADS","ADS2",3,3.39,11.794,"noerror",NA,NA
-"1050","irl-concordia","MB6_S17","IDS","IDS2",4,0.32,6.608,"noerror",NA,NA
-"1051","irl-concordia","MB6_S17","IDS","IDS3",5,5.75,18.031,"noerror",NA,NA
-"1052","irl-concordia","MB6_S17","ADS","ADS3",6,0,0.633,"error","experimenter began trial too early","trial was skipped"
-"1053","irl-concordia","MB6_S17","ADS","ADS4",7,12.84,18.067,"noerror",NA,NA
-"1054","irl-concordia","MB6_S17","IDS","IDS4",8,8.49,18.052,"noerror",NA,NA
-"1055","irl-concordia","MB6_S17","IDS","IDS5",9,13.96,18.044,"noerror",NA,NA
-"1056","irl-concordia","MB6_S17","ADS","ADS5",10,10.78,18.035,"noerror",NA,NA
-"1057","irl-concordia","MB6_S17","IDS","IDS6",11,1.1,17.033,"error","experimenter began trial too early","skipped attention-getter"
-"1058","irl-concordia","MB6_S17","ADS","ADS6",12,7.01,18.042,"error","trial should have ended earlier",NA
-"1059","irl-concordia","MB6_S17","ADS","ADS7",13,4.57,8.815,"noerror",NA,NA
-"1060","irl-concordia","MB6_S17","IDS","IDS7",14,0.83,7.127,"noerror",NA,NA
-"1061","irl-concordia","MB6_S17","IDS","IDS8",15,5.81,16.966,"noerror",NA,NA
-"1062","irl-concordia","MB6_S17","ADS","ADS8",16,2.3,6.794,"noerror",NA,NA
-"1063","irl-concordia","MB6_S18","training","train2",-2,16.64,18.052,"noerror",NA,NA
-"1064","irl-concordia","MB6_S18","training","train1",-1,17.04,28.035,"noerror",NA,NA
-"1065","irl-concordia","MB6_S18","ADS","ADS5",1,16.27,18.039,"noerror",NA,NA
-"1066","irl-concordia","MB6_S18","IDS","IDS5",2,2.18,6.499,"noerror",NA,NA
-"1067","irl-concordia","MB6_S18","IDS","IDS7",3,7.83,11.495,"noerror",NA,NA
-"1068","irl-concordia","MB6_S18","ADS","ADS7",4,15.49,18.042,"noerror",NA,NA
-"1069","irl-concordia","MB6_S18","IDS","IDS1",5,13.67,18.037,"noerror",NA,NA
-"1070","irl-concordia","MB6_S18","ADS","ADS1",6,12.59,18.04,"error","trial should have ended earlier",NA
-"1071","irl-concordia","MB6_S18","IDS","IDS3",7,7.77,17.897,"noerror",NA,NA
-"1072","irl-concordia","MB6_S18","ADS","ADS3",8,13.48,18.021,"error","experimenter began trial too early",NA
-"1073","irl-concordia","MB6_S18","IDS","IDS2",9,4.6,9.096,"noerror",NA,NA
-"1074","irl-concordia","MB6_S18","ADS","ADS2",10,1.83,5.673,"error","experimenter ended trial too early",NA
-"1075","irl-concordia","MB6_S18","ADS","ADS4",11,2.05,5.434,"error","trial should have ended earlier",NA
-"1076","irl-concordia","MB6_S18","IDS","IDS4",12,11.12,18.036,"noerror",NA,NA
-"1077","irl-concordia","MB6_S18","ADS","ADS6",13,1.79,5.36,"noerror",NA,NA
-"1078","irl-concordia","MB6_S18","IDS","IDS6",14,2.16,7.248,"noerror",NA,NA
-"1079","irl-concordia","MB6_S18","ADS","ADS8",15,2.08,7.21,"noerror",NA,NA
-"1080","irl-concordia","MB6_S18","IDS","IDS8",16,1.02,5.712,"error","experimenter began trial too early",NA
-"1099","irl-concordia","MB6_S20","training","train1",-2,16.24,31.842,"noerror",NA,NA
-"1100","irl-concordia","MB6_S20","training","train2",-1,17.75,18.029,"noerror",NA,NA
-"1101","irl-concordia","MB6_S20","IDS","IDS5",1,15.75,18.045,"noerror",NA,NA
-"1102","irl-concordia","MB6_S20","ADS","ADS5",2,5.43,9.66,"noerror",NA,NA
-"1103","irl-concordia","MB6_S20","ADS","ADS7",3,15.38,18.043,"noerror",NA,NA
-"1104","irl-concordia","MB6_S20","IDS","IDS7",4,4.6,10.058,"noerror",NA,NA
-"1105","irl-concordia","MB6_S20","ADS","ADS1",5,5.75,9.383,"noerror",NA,NA
-"1106","irl-concordia","MB6_S20","IDS","IDS1",6,6.88,10.657,"noerror",NA,NA
-"1107","irl-concordia","MB6_S20","ADS","ADS3",7,14.06,18.052,"noerror",NA,NA
-"1108","irl-concordia","MB6_S20","IDS","IDS3",8,11.37,14.102,"noerror",NA,NA
-"1109","irl-concordia","MB6_S20","ADS","ADS2",9,10.22,18.049,"error","trial should have ended earlier",NA
-"1110","irl-concordia","MB6_S20","IDS","IDS2",10,9.44,15.566,"error","experimenter ended trial too early",NA
-"1111","irl-concordia","MB6_S20","IDS","IDS4",11,14.71,18.039,"noerror",NA,NA
-"1112","irl-concordia","MB6_S20","ADS","ADS4",12,15.17,18.035,"noerror",NA,NA
-"1113","irl-concordia","MB6_S20","IDS","IDS6",13,3.38,7.356,"noerror",NA,NA
-"1114","irl-concordia","MB6_S20","ADS","ADS6",14,13.4,18.044,"noerror",NA,NA
-"1115","irl-concordia","MB6_S20","IDS","IDS8",15,3.11,9.603,"error","trial should have ended earlier",NA
-"1116","irl-concordia","MB6_S20","ADS","ADS8",16,0.27,14.915,"noerror",NA,NA
-"1225","irl-concordia","MB6_S27","training","train1",-2,12.7,15.412,"noerror",NA,NA
-"1226","irl-concordia","MB6_S27","training","train2",-1,8.56,16.033,"noerror",NA,NA
-"1227","irl-concordia","MB6_S27","IDS","IDS5",1,4.97,15.067,"noerror",NA,NA
-"1228","irl-concordia","MB6_S27","ADS","ADS5",2,8.76,16.483,"noerror",NA,NA
-"1229","irl-concordia","MB6_S27","ADS","ADS7",3,4.1,15.608,"noerror",NA,NA
-"1230","irl-concordia","MB6_S27","IDS","IDS7",4,14.92,18.045,"noerror",NA,NA
-"1231","irl-concordia","MB6_S27","ADS","ADS1",5,4.35,9.03,"noerror",NA,NA
-"1232","irl-concordia","MB6_S27","IDS","IDS1",6,5.27,14.88,"error","trial should have ended earlier",NA
-"1233","irl-concordia","MB6_S27","ADS","ADS3",7,12.48,18.045,"noerror",NA,NA
-"1234","irl-concordia","MB6_S27","IDS","IDS3",8,4.67,9.557,"noerror",NA,NA
-"1235","irl-concordia","MB6_S27","ADS","ADS2",9,0.96,6.353,"noerror",NA,NA
-"1236","irl-concordia","MB6_S27","IDS","IDS2",10,7.59,16.095,"noerror",NA,NA
-"1237","irl-concordia","MB6_S27","IDS","IDS4",11,2.91,9.4,"noerror",NA,NA
-"1238","irl-concordia","MB6_S27","ADS","ADS4",12,3.54,7.97,"noerror",NA,NA
-"1239","irl-concordia","MB6_S27","IDS","IDS6",13,2.68,7.049,"noerror",NA,NA
-"1240","irl-concordia","MB6_S27","ADS","ADS6",14,3.06,6.884,"noerror",NA,NA
-"1241","irl-concordia","MB6_S27","IDS","IDS8",15,0,6.079,"error","experimenter began trial too early",NA
-"1242","irl-concordia","MB6_S27","ADS","ADS8",16,6.3,14.362,"noerror",NA,NA
-"1351","irl-concordia","MB6_S34","training","train2",-2,15.41,18.041,"noerror",NA,NA
-"1352","irl-concordia","MB6_S34","training","train1",-1,12.5,18.048,"noerror",NA,NA
-"1353","irl-concordia","MB6_S34","ADS","ADS5",1,16.19,18.055,"noerror",NA,NA
-"1354","irl-concordia","MB6_S34","IDS","IDS5",2,11.98,18.037,"noerror",NA,NA
-"1355","irl-concordia","MB6_S34","IDS","IDS7",3,7,12.197,"noerror",NA,NA
-"1356","irl-concordia","MB6_S34","ADS","ADS7",4,6.52,10.335,"error","experimenter ended trial too early",NA
-"1357","irl-concordia","MB6_S34","IDS","IDS1",5,12.64,18.027,"noerror",NA,NA
-"1358","irl-concordia","MB6_S34","ADS","ADS1",6,4.79,8.267,"error","experimenter ended trial too early",NA
-"1359","irl-concordia","MB6_S34","IDS","IDS3",7,7.57,16.017,"noerror",NA,NA
-"1360","irl-concordia","MB6_S34","ADS","ADS3",8,8.53,17.304,"noerror",NA,NA
-"1361","irl-concordia","MB6_S34","IDS","IDS2",9,4.63,17.919,"error","trial should have ended earlier",NA
-"1362","irl-concordia","MB6_S34","ADS","ADS2",10,1.91,7.035,"noerror",NA,NA
-"1363","irl-concordia","MB6_S34","ADS","ADS4",11,1.37,8.499,"error","trial should have ended earlier",NA
-"1364","irl-concordia","MB6_S34","IDS","IDS4",12,5.01,18.04,"noerror",NA,NA
-"1365","irl-concordia","MB6_S34","ADS","ADS6",13,1.25,5.612,"noerror",NA,NA
-"1366","irl-concordia","MB6_S34","IDS","IDS6",14,4.96,18.044,"error","trial should have ended earlier",NA
-"1367","irl-concordia","MB6_S34","ADS","ADS8",15,2.21,9.158,"noerror",NA,NA
-"1368","irl-concordia","MB6_S34","IDS","IDS8",16,4.64,10.514,"error","experimenter ended trial too early",NA
+"775","irl-concordia","MB6_S01","training","train1",-2,16.66,18.05,"noerror",NA,NA
+"776","irl-concordia","MB6_S01","training","train2",-1,9.01,18.012,"error","trial should have ended earlier",NA
+"777","irl-concordia","MB6_S01","IDS","IDS1",1,13.84,18.053,"noerror",NA,NA
+"778","irl-concordia","MB6_S01","ADS","ADS1",2,14.91,18.059,"noerror",NA,NA
+"779","irl-concordia","MB6_S01","IDS","IDS2",3,8.03,14.417,"noerror",NA,NA
+"780","irl-concordia","MB6_S01","ADS","ADS2",4,6.23,10.915,"noerror",NA,NA
+"781","irl-concordia","MB6_S01","ADS","ADS3",5,5.01,18.054,"error","trial should have ended earlier",NA
+"782","irl-concordia","MB6_S01","IDS","IDS3",6,6.05,10.533,"noerror",NA,NA
+"783","irl-concordia","MB6_S01","IDS","IDS4",7,3.38,7.669,"noerror",NA,NA
+"784","irl-concordia","MB6_S01","ADS","ADS4",8,4.21,7.792,"noerror",NA,NA
+"785","irl-concordia","MB6_S01","ADS","ADS5",9,5.61,10.883,"noerror",NA,NA
+"786","irl-concordia","MB6_S01","IDS","IDS5",10,13.92,18.061,"noerror",NA,NA
+"787","irl-concordia","MB6_S01","ADS","ADS6",11,2.83,7.331,"noerror",NA,NA
+"788","irl-concordia","MB6_S01","IDS","IDS6",12,8.39,18.052,"error","trial should have ended earlier",NA
+"789","irl-concordia","MB6_S01","IDS","IDS7",13,10.68,18.058,"noerror",NA,NA
+"790","irl-concordia","MB6_S01","ADS","ADS7",14,3.01,9.277,"error","experimenter ended trial too early",NA
+"791","irl-concordia","MB6_S01","ADS","ADS8",15,6.97,12.693,"noerror",NA,NA
+"792","irl-concordia","MB6_S01","IDS","IDS8",16,6.69,9.918,"noerror",NA,NA
+"811","irl-concordia","MB6_S03","training","train2",-2,17.29,18.059,"noerror",NA,NA
+"812","irl-concordia","MB6_S03","training","train1",-1,11.04,18.056,"noerror",NA,NA
+"813","irl-concordia","MB6_S03","ADS","ADS5",1,2.93,10.078,"noerror",NA,NA
+"814","irl-concordia","MB6_S03","IDS","IDS5",2,4.86,8.64,"noerror",NA,NA
+"815","irl-concordia","MB6_S03","IDS","IDS7",3,1.13,8.156,"noerror",NA,NA
+"816","irl-concordia","MB6_S03","ADS","ADS7",4,5.19,10.011,"noerror",NA,NA
+"817","irl-concordia","MB6_S03","IDS","IDS1",5,4.82,13.828,"error","trial should have ended earlier",NA
+"818","irl-concordia","MB6_S03","ADS","ADS1",6,2.26,7.205,"noerror",NA,NA
+"819","irl-concordia","MB6_S03","IDS","IDS3",7,2.86,9.31,"noerror",NA,NA
+"820","irl-concordia","MB6_S03","ADS","ADS3",8,2.65,6.926,"noerror",NA,NA
+"821","irl-concordia","MB6_S03","IDS","IDS2",9,9.9,14.677,"noerror",NA,NA
+"822","irl-concordia","MB6_S03","ADS","ADS2",10,12.24,18.056,"noerror",NA,NA
+"823","irl-concordia","MB6_S03","ADS","ADS4",11,2.03,8.121,"noerror",NA,NA
+"824","irl-concordia","MB6_S03","IDS","IDS4",12,0.47,10.225,"noerror",NA,NA
+"825","irl-concordia","MB6_S03","ADS","ADS6",13,3.05,8.536,"noerror",NA,NA
+"826","irl-concordia","MB6_S03","IDS","IDS6",14,2.64,5.565,"error","experimenter ended trial too early",NA
+"827","irl-concordia","MB6_S03","ADS","ADS8",15,0.67,5.536,"noerror",NA,NA
+"828","irl-concordia","MB6_S03","IDS","IDS8",16,0.48,14.496,"error","trial should have ended earlier",NA
+"829","irl-concordia","MB6_S04","training","train2",-2,15.35,18.064,"noerror",NA,NA
+"830","irl-concordia","MB6_S04","training","train1",-1,1.37,7.213,"error","experimenter ended trial too early",NA
+"831","irl-concordia","MB6_S04","ADS","ADS1",1,9.31,18.063,"noerror",NA,NA
+"832","irl-concordia","MB6_S04","IDS","IDS1",2,11.57,18.033,"noerror",NA,NA
+"833","irl-concordia","MB6_S04","ADS","ADS2",3,14.57,18.049,"noerror",NA,NA
+"834","irl-concordia","MB6_S04","IDS","IDS2",4,9.08,18.053,"noerror",NA,NA
+"835","irl-concordia","MB6_S04","IDS","IDS3",5,11.21,18.053,"noerror",NA,NA
+"836","irl-concordia","MB6_S04","ADS","ADS3",6,0.18,15.873,"error","trial should have ended earlier",NA
+"837","irl-concordia","MB6_S04","ADS","ADS4",7,8.76,14.326,"error","trial should have ended earlier",NA
+"838","irl-concordia","MB6_S04","IDS","IDS4",8,3.28,10.4,"noerror",NA,NA
+"839","irl-concordia","MB6_S04","IDS","IDS5",9,2.65,12.128,"noerror",NA,NA
+"840","irl-concordia","MB6_S04","ADS","ADS5",10,2.62,7.243,"noerror",NA,NA
+"841","irl-concordia","MB6_S04","IDS","IDS6",11,2.78,8.061,"error","experimenter ended trial too early",NA
+"842","irl-concordia","MB6_S04","ADS","ADS6",12,4.3,16.089,"noerror",NA,NA
+"843","irl-concordia","MB6_S04","ADS","ADS7",13,5.78,18.054,"error","trial should have ended earlier",NA
+"844","irl-concordia","MB6_S04","IDS","IDS7",14,7.42,11.543,"noerror",NA,NA
+"845","irl-concordia","MB6_S04","IDS","IDS8",15,10.38,11.124,"error","experimenter ended trial too early",NA
+"846","irl-concordia","MB6_S04","ADS","ADS8",16,1.21,6.443,"noerror",NA,NA
+"847","irl-concordia","MB6_S05","training","train1",-2,4.38,16.8,"noerror",NA,NA
+"848","irl-concordia","MB6_S05","training","train2",-1,0,3.368,"error","experimenter began trial too early",NA
+"849","irl-concordia","MB6_S05","IDS","IDS5",1,15.13,18.058,"noerror",NA,NA
+"850","irl-concordia","MB6_S05","ADS","ADS5",2,10.12,15.268,"noerror",NA,NA
+"851","irl-concordia","MB6_S05","ADS","ADS7",3,2.36,12.377,"noerror",NA,NA
+"852","irl-concordia","MB6_S05","IDS","IDS7",4,0,8.908,"error","tracking error",NA
+"853","irl-concordia","MB6_S05","ADS","ADS1",5,2.38,8.04,"noerror",NA,NA
+"854","irl-concordia","MB6_S05","IDS","IDS1",6,3.65,9.762,"noerror",NA,NA
+"855","irl-concordia","MB6_S05","ADS","ADS3",7,2.48,8,"noerror",NA,NA
+"856","irl-concordia","MB6_S05","IDS","IDS3",8,3.96,9.659,"noerror",NA,NA
+"857","irl-concordia","MB6_S05","ADS","ADS2",9,0.59,7.04,"noerror",NA,NA
+"858","irl-concordia","MB6_S05","IDS","IDS2",10,5.61,9.251,"noerror",NA,NA
+"859","irl-concordia","MB6_S05","IDS","IDS4",11,6.87,10.603,"noerror",NA,NA
+"860","irl-concordia","MB6_S05","ADS","ADS4",12,4,7.662,"noerror",NA,NA
+"861","irl-concordia","MB6_S05","IDS","IDS6",13,7.03,13.939,"noerror",NA,NA
+"862","irl-concordia","MB6_S05","ADS","ADS6",14,3.63,8.174,"noerror",NA,NA
+"863","irl-concordia","MB6_S05","IDS","IDS8",15,3.89,8.177,"noerror",NA,NA
+"864","irl-concordia","MB6_S05","ADS","ADS8",16,1.37,7.519,"noerror",NA,NA
+"883","irl-concordia","MB6_S07","training","train2",-2,15.06,18.063,"noerror",NA,NA
+"884","irl-concordia","MB6_S07","training","train1",-1,12.44,18.057,"noerror",NA,NA
+"885","irl-concordia","MB6_S07","ADS","ADS1",1,10.29,18.054,"noerror",NA,NA
+"886","irl-concordia","MB6_S07","IDS","IDS1",2,11.13,18.057,"noerror",NA,NA
+"887","irl-concordia","MB6_S07","ADS","ADS2",3,7.39,18.055,"noerror",NA,NA
+"888","irl-concordia","MB6_S07","IDS","IDS2",4,8.79,17.945,"noerror",NA,NA
+"889","irl-concordia","MB6_S07","IDS","IDS3",5,9.97,18.067,"noerror",NA,NA
+"890","irl-concordia","MB6_S07","ADS","ADS3",6,5.95,15.977,"error","trial should have ended earlier",NA
+"891","irl-concordia","MB6_S07","ADS","ADS4",7,4.19,10.067,"noerror",NA,NA
+"892","irl-concordia","MB6_S07","IDS","IDS4",8,3.34,8.156,"noerror",NA,NA
+"893","irl-concordia","MB6_S07","IDS","IDS5",9,2.32,8.476,"noerror",NA,NA
+"894","irl-concordia","MB6_S07","ADS","ADS5",10,4.44,13.102,"noerror",NA,NA
+"895","irl-concordia","MB6_S07","IDS","IDS6",11,2.68,6.594,"noerror",NA,NA
+"896","irl-concordia","MB6_S07","ADS","ADS6",12,2.49,18.055,"noerror",NA,NA
+"897","irl-concordia","MB6_S07","ADS","ADS7",13,1.22,10.478,"noerror",NA,"baby was half looking, red fixation point not found"
+"898","irl-concordia","MB6_S07","IDS","IDS7",14,4.1,18.054,"error","trial should have ended earlier",NA
+"899","irl-concordia","MB6_S07","IDS","IDS8",15,3.77,8.436,"noerror",NA,NA
+"900","irl-concordia","MB6_S07","ADS","ADS8",16,5.88,13.226,"noerror",NA,NA
+"919","irl-concordia","MB6_S09","training","train2",-2,17.55,21.067,"noerror",NA,NA
+"920","irl-concordia","MB6_S09","training","train1",-1,18.01,18.043,"noerror",NA,NA
+"921","irl-concordia","MB6_S09","ADS","ADS5",1,15.41,18.071,"noerror",NA,NA
+"922","irl-concordia","MB6_S09","IDS","IDS5",2,14.45,18.057,"noerror",NA,NA
+"923","irl-concordia","MB6_S09","IDS","IDS7",3,14.71,18.055,"noerror",NA,NA
+"924","irl-concordia","MB6_S09","ADS","ADS7",4,0,2.546,"error","experimenter began trial too early",NA
+"925","irl-concordia","MB6_S09","IDS","IDS1",5,11.34,17.491,"noerror",NA,NA
+"926","irl-concordia","MB6_S09","ADS","ADS1",6,13.43,18.02,"noerror",NA,NA
+"927","irl-concordia","MB6_S09","IDS","IDS3",7,13.88,18.05,"noerror",NA,NA
+"928","irl-concordia","MB6_S09","ADS","ADS3",8,3.43,8.239,"noerror",NA,NA
+"929","irl-concordia","MB6_S09","IDS","IDS2",9,4.53,8.235,"noerror",NA,NA
+"930","irl-concordia","MB6_S09","ADS","ADS2",10,1.16,5.36,"noerror",NA,NA
+"931","irl-concordia","MB6_S09","ADS","ADS4",11,4.99,10.537,"noerror",NA,NA
+"932","irl-concordia","MB6_S09","IDS","IDS4",12,4.24,9.134,"noerror",NA,NA
+"933","irl-concordia","MB6_S09","ADS","ADS6",13,2.76,7.078,"noerror",NA,NA
+"934","irl-concordia","MB6_S09","IDS","IDS6",14,3.04,6.206,"noerror",NA,NA
+"935","irl-concordia","MB6_S09","ADS","ADS8",15,5.55,12.274,"noerror",NA,NA
+"936","irl-concordia","MB6_S09","IDS","IDS8",16,2.93,6.771,"noerror",NA,NA
+"937","irl-concordia","MB6_S10","training","train1",-2,12.37,13.15,"error","experimenter ended trial too early",NA
+"938","irl-concordia","MB6_S10","training","train2",-1,10.25,12.783,"error","experimenter ended trial too early",NA
+"939","irl-concordia","MB6_S10","IDS","IDS1",1,16.75,18.031,"noerror",NA,NA
+"940","irl-concordia","MB6_S10","ADS","ADS1",2,16.49,18.059,"noerror",NA,NA
+"941","irl-concordia","MB6_S10","IDS","IDS2",3,12.19,17.702,"noerror",NA,NA
+"942","irl-concordia","MB6_S10","ADS","ADS2",4,2.74,7.262,"noerror",NA,NA
+"943","irl-concordia","MB6_S10","ADS","ADS3",5,4.84,8.236,"noerror",NA,NA
+"944","irl-concordia","MB6_S10","IDS","IDS3",6,3.47,7.28,"noerror",NA,NA
+"945","irl-concordia","MB6_S10","IDS","IDS4",7,3.81,7.274,"noerror",NA,NA
+"946","irl-concordia","MB6_S10","ADS","ADS4",8,2.96,6.955,"noerror",NA,NA
+"947","irl-concordia","MB6_S10","ADS","ADS5",9,2.62,6.304,"noerror",NA,NA
+"948","irl-concordia","MB6_S10","IDS","IDS5",10,1.79,5.234,"noerror",NA,NA
+"949","irl-concordia","MB6_S10","ADS","ADS6",11,2.43,5.627,"noerror",NA,NA
+"950","irl-concordia","MB6_S10","IDS","IDS6",12,2.05,5.083,"noerror",NA,NA
+"951","irl-concordia","MB6_S10","IDS","IDS7",13,1.78,4.975,"noerror",NA,NA
+"952","irl-concordia","MB6_S10","ADS","ADS7",14,2.54,5.258,"noerror",NA,NA
+"953","irl-concordia","MB6_S10","ADS","ADS8",15,4.36,7.293,"noerror",NA,NA
+"954","irl-concordia","MB6_S10","IDS","IDS8",16,3.03,6.851,"noerror",NA,NA
+"955","irl-concordia","MB6_S11","training","train2",-2,15.25,18.065,"noerror",NA,NA
+"956","irl-concordia","MB6_S11","training","train1",-1,7.47,11.535,"noerror",NA,NA
+"957","irl-concordia","MB6_S11","ADS","ADS1",1,14.13,18.052,"noerror",NA,NA
+"958","irl-concordia","MB6_S11","IDS","IDS1",2,3.53,7.593,"noerror",NA,NA
+"959","irl-concordia","MB6_S11","ADS","ADS2",3,1.73,5.212,"noerror",NA,NA
+"960","irl-concordia","MB6_S11","IDS","IDS2",4,6.94,10.935,"noerror",NA,NA
+"961","irl-concordia","MB6_S11","IDS","IDS3",5,2.8,7.659,"noerror",NA,NA
+"962","irl-concordia","MB6_S11","ADS","ADS3",6,0.98,6.789,"noerror",NA,NA
+"963","irl-concordia","MB6_S11","ADS","ADS4",7,1.95,7.724,"noerror",NA,NA
+"964","irl-concordia","MB6_S11","IDS","IDS4",8,1.17,6.953,"noerror",NA,NA
+"965","irl-concordia","MB6_S11","IDS","IDS5",9,0.6,6.813,"noerror",NA,NA
+"966","irl-concordia","MB6_S11","ADS","ADS5",10,1.1,14.504,"error","experimenter began trial too early",NA
+"967","irl-concordia","MB6_S11","IDS","IDS6",11,0,18.052,"error","parent stopped the study",NA
+"968","irl-concordia","MB6_S11","ADS","ADS6",12,NA,NA,"error","fussy, trial not watched",NA
+"969","irl-concordia","MB6_S11","ADS","ADS7",13,NA,NA,"error","fussy, trial not watched",NA
+"970","irl-concordia","MB6_S11","IDS","IDS7",14,NA,NA,"error","fussy, trial not watched",NA
+"971","irl-concordia","MB6_S11","IDS","IDS8",15,NA,NA,"error","fussy, trial not watched",NA
+"972","irl-concordia","MB6_S11","ADS","ADS8",16,NA,NA,"error","fussy, trial not watched",NA
+"973","irl-concordia","MB6_S12","training","train1",-2,18.07,18.069,"noerror",NA,NA
+"974","irl-concordia","MB6_S12","training","train2",-1,18.04,18.053,"noerror",NA,NA
+"975","irl-concordia","MB6_S12","IDS","IDS5",1,17.43,18.06,"noerror",NA,NA
+"976","irl-concordia","MB6_S12","ADS","ADS5",2,7.38,18.053,"error","trial should have ended earlier",NA
+"977","irl-concordia","MB6_S12","ADS","ADS7",3,5.7,18.052,"error","trial should have ended earlier",NA
+"978","irl-concordia","MB6_S12","IDS","IDS7",4,0,5.631,"error","experimenter began trial too early",NA
+"979","irl-concordia","MB6_S12","ADS","ADS1",5,5.92,5.95,"error","experimenter ended trial too early",NA
+"980","irl-concordia","MB6_S12","IDS","IDS1",6,9.67,18.054,"error","trial should have ended earlier",NA
+"981","irl-concordia","MB6_S12","ADS","ADS3",7,1.22,11.767,"error","trial should have ended earlier",NA
+"982","irl-concordia","MB6_S12","IDS","IDS3",8,18.06,18.057,"noerror",NA,NA
+"983","irl-concordia","MB6_S12","ADS","ADS2",9,2.35,8.302,"noerror",NA,NA
+"984","irl-concordia","MB6_S12","IDS","IDS2",10,3.5,7.338,"error","experimenter ended trial too early",NA
+"985","irl-concordia","MB6_S12","IDS","IDS4",11,1.73,8.505,"error","trial should have ended earlier",NA
+"986","irl-concordia","MB6_S12","ADS","ADS4",12,3.31,18.053,"error","experimenter began trial too early",NA
+"987","irl-concordia","MB6_S12","IDS","IDS6",13,11.69,18.052,"error","trial should have ended earlier",NA
+"988","irl-concordia","MB6_S12","ADS","ADS6",14,1.62,13.15,"error","trial should have ended earlier",NA
+"989","irl-concordia","MB6_S12","IDS","IDS8",15,1.11,10.981,"error","trial should have ended earlier",NA
+"990","irl-concordia","MB6_S12","ADS","ADS8",16,0.86,11.894,"error","trial should have ended earlier",NA
+"991","irl-concordia","MB6_S13","training","train1",-2,3.28,7.383,"noerror",NA,NA
+"992","irl-concordia","MB6_S13","training","train2",-1,2.03,6.146,"noerror",NA,NA
+"993","irl-concordia","MB6_S13","IDS","IDS5",1,17.85,18.055,"noerror",NA,NA
+"994","irl-concordia","MB6_S13","ADS","ADS5",2,3.56,8.274,"noerror",NA,NA
+"995","irl-concordia","MB6_S13","ADS","ADS7",3,3.8,6.893,"error","experimenter ended trial too early",NA
+"996","irl-concordia","MB6_S13","IDS","IDS7",4,5.15,9.199,"noerror",NA,NA
+"997","irl-concordia","MB6_S13","ADS","ADS1",5,3.03,7.219,"error","experimenter began trial too early",NA
+"998","irl-concordia","MB6_S13","IDS","IDS1",6,2.07,6.467,"error","experimenter began trial too early",NA
+"999","irl-concordia","MB6_S13","ADS","ADS3",7,3.71,7.355,"error","experimenter ended trial too early",NA
+"1000","irl-concordia","MB6_S13","IDS","IDS3",8,1.05,5.82,"error","experimenter ended trial too early",NA
+"1001","irl-concordia","MB6_S13","ADS","ADS2",9,1.38,5.181,"noerror",NA,NA
+"1002","irl-concordia","MB6_S13","IDS","IDS2",10,0.93,4.979,"noerror",NA,NA
+"1003","irl-concordia","MB6_S13","IDS","IDS4",11,0.64,5.457,"noerror",NA,NA
+"1004","irl-concordia","MB6_S13","ADS","ADS4",12,0.8,4.958,"noerror",NA,NA
+"1005","irl-concordia","MB6_S13","IDS","IDS6",13,0.78,4.871,"noerror",NA,NA
+"1006","irl-concordia","MB6_S13","ADS","ADS6",14,2.97,8.389,"noerror",NA,NA
+"1007","irl-concordia","MB6_S13","IDS","IDS8",15,0.58,5.875,"error","experimenter began trial too early",NA
+"1008","irl-concordia","MB6_S13","ADS","ADS8",16,2.67,5.038,"error","experimenter ended trial too early",NA
+"1009","irl-concordia","MB6_S14","training","train2",-2,3.47,7.346,"noerror",NA,NA
+"1010","irl-concordia","MB6_S14","training","train1",-1,3.06,6.911,"noerror",NA,NA
+"1011","irl-concordia","MB6_S14","ADS","ADS5",1,4.46,10.298,"noerror",NA,NA
+"1012","irl-concordia","MB6_S14","IDS","IDS5",2,3.77,9.131,"noerror",NA,NA
+"1013","irl-concordia","MB6_S14","IDS","IDS7",3,1.6,8.513,"noerror",NA,NA
+"1014","irl-concordia","MB6_S14","ADS","ADS7",4,6.73,12.529,"noerror",NA,NA
+"1015","irl-concordia","MB6_S14","IDS","IDS1",5,2.42,9.064,"noerror",NA,NA
+"1016","irl-concordia","MB6_S14","ADS","ADS1",6,1.96,6.134,"noerror",NA,NA
+"1017","irl-concordia","MB6_S14","IDS","IDS3",7,1.88,7.323,"noerror",NA,NA
+"1018","irl-concordia","MB6_S14","ADS","ADS3",8,1.3,7.187,"noerror",NA,NA
+"1019","irl-concordia","MB6_S14","IDS","IDS2",9,2.73,15.072,"noerror",NA,NA
+"1020","irl-concordia","MB6_S14","ADS","ADS2",10,3.26,10.054,"noerror",NA,NA
+"1021","irl-concordia","MB6_S14","ADS","ADS4",11,0,8.207,"error","experimenter began trial too early",NA
+"1022","irl-concordia","MB6_S14","IDS","IDS4",12,1.17,5.579,"noerror",NA,NA
+"1023","irl-concordia","MB6_S14","ADS","ADS6",13,1.08,6.217,"noerror",NA,NA
+"1024","irl-concordia","MB6_S14","IDS","IDS6",14,4.15,14.55,"noerror",NA,NA
+"1025","irl-concordia","MB6_S14","ADS","ADS8",15,3.39,8.151,"noerror",NA,NA
+"1026","irl-concordia","MB6_S14","IDS","IDS8",16,0,5.815,"error","experimenter began trial too early",NA
+"1027","irl-concordia","MB6_S15","training","train1",-2,7.24,11.937,"noerror",NA,NA
+"1028","irl-concordia","MB6_S15","training","train2",-1,3.22,6.322,"noerror",NA,NA
+"1029","irl-concordia","MB6_S15","IDS","IDS1",1,12.72,18.043,"noerror",NA,NA
+"1030","irl-concordia","MB6_S15","ADS","ADS1",2,9.88,16.001,"noerror",NA,NA
+"1031","irl-concordia","MB6_S15","IDS","IDS2",3,11.03,14.851,"noerror",NA,NA
+"1032","irl-concordia","MB6_S15","ADS","ADS2",4,7.06,17.212,"noerror",NA,NA
+"1033","irl-concordia","MB6_S15","ADS","ADS3",5,2.37,7.12,"noerror",NA,NA
+"1034","irl-concordia","MB6_S15","IDS","IDS3",6,9.14,14.675,"noerror",NA,NA
+"1035","irl-concordia","MB6_S15","IDS","IDS4",7,4.75,11.609,"noerror",NA,NA
+"1036","irl-concordia","MB6_S15","ADS","ADS4",8,1.05,8.574,"error","experimenter began trial too early",NA
+"1037","irl-concordia","MB6_S15","ADS","ADS5",9,5.72,10.238,"error","trial should have ended earlier",NA
+"1038","irl-concordia","MB6_S15","IDS","IDS5",10,1.88,6.231,"error","experimenter began trial too early",NA
+"1039","irl-concordia","MB6_S15","ADS","ADS6",11,1.1,7.429,"error","experimenter began trial too early",NA
+"1040","irl-concordia","MB6_S15","IDS","IDS6",12,1.28,7.916,"error","experimenter began trial too early",NA
+"1041","irl-concordia","MB6_S15","IDS","IDS7",13,4.69,7.671,"error","experimenter ended trial too early",NA
+"1042","irl-concordia","MB6_S15","ADS","ADS7",14,1.4,4.447,"noerror",NA,NA
+"1043","irl-concordia","MB6_S15","ADS","ADS8",15,0.35,3.975,"noerror",NA,NA
+"1044","irl-concordia","MB6_S15","IDS","IDS8",16,2.39,6.153,"noerror",NA,NA
+"1045","irl-concordia","MB6_S16","training","train2",-2,10.94,14.905,"noerror",NA,NA
+"1046","irl-concordia","MB6_S16","training","train1",-1,2.4,7.519,"noerror",NA,NA
+"1047","irl-concordia","MB6_S16","ADS","ADS1",1,8.83,13.477,"noerror",NA,NA
+"1048","irl-concordia","MB6_S16","IDS","IDS1",2,3.21,7.676,"noerror",NA,NA
+"1049","irl-concordia","MB6_S16","ADS","ADS2",3,3.41,7.194,"noerror",NA,NA
+"1050","irl-concordia","MB6_S16","IDS","IDS2",4,2,6.817,"noerror",NA,NA
+"1051","irl-concordia","MB6_S16","IDS","IDS3",5,5.71,10.214,"noerror",NA,NA
+"1052","irl-concordia","MB6_S16","ADS","ADS3",6,3.43,6.577,"noerror",NA,NA
+"1053","irl-concordia","MB6_S16","ADS","ADS4",7,1.15,5.488,"noerror",NA,NA
+"1054","irl-concordia","MB6_S16","IDS","IDS4",8,2.61,6.46,"noerror",NA,NA
+"1055","irl-concordia","MB6_S16","IDS","IDS5",9,2.4,7.078,"noerror",NA,NA
+"1056","irl-concordia","MB6_S16","ADS","ADS5",10,5.74,8.679,"noerror",NA,NA
+"1057","irl-concordia","MB6_S16","IDS","IDS6",11,2.49,6.224,"error","experimenter ended trial too early",NA
+"1058","irl-concordia","MB6_S16","ADS","ADS6",12,2.42,6.037,"error","experimenter ended trial too early",NA
+"1059","irl-concordia","MB6_S16","ADS","ADS7",13,3.74,11.821,"error","experimenter ended trial too early",NA
+"1060","irl-concordia","MB6_S16","IDS","IDS7",14,9.25,18.048,"noerror",NA,NA
+"1061","irl-concordia","MB6_S16","IDS","IDS8",15,6.51,11.901,"error","experimenter began trial too early",NA
+"1062","irl-concordia","MB6_S16","ADS","ADS8",16,3.89,8.144,"noerror",NA,NA
+"1063","irl-concordia","MB6_S17","training","train2",-2,14.63,18.046,"noerror",NA,NA
+"1064","irl-concordia","MB6_S17","training","train1",-1,4.36,16.577,"noerror",NA,NA
+"1065","irl-concordia","MB6_S17","ADS","ADS1",1,5.86,18.047,"noerror",NA,NA
+"1066","irl-concordia","MB6_S17","IDS","IDS1",2,5.94,18.025,"error","trial should have ended earlier",NA
+"1067","irl-concordia","MB6_S17","ADS","ADS2",3,3.39,11.794,"noerror",NA,NA
+"1068","irl-concordia","MB6_S17","IDS","IDS2",4,0.32,6.608,"noerror",NA,NA
+"1069","irl-concordia","MB6_S17","IDS","IDS3",5,5.75,18.031,"noerror",NA,NA
+"1070","irl-concordia","MB6_S17","ADS","ADS3",6,0,0.633,"error","experimenter began trial too early","trial was skipped"
+"1071","irl-concordia","MB6_S17","ADS","ADS4",7,12.84,18.067,"noerror",NA,NA
+"1072","irl-concordia","MB6_S17","IDS","IDS4",8,8.49,18.052,"noerror",NA,NA
+"1073","irl-concordia","MB6_S17","IDS","IDS5",9,13.96,18.044,"noerror",NA,NA
+"1074","irl-concordia","MB6_S17","ADS","ADS5",10,10.78,18.035,"noerror",NA,NA
+"1075","irl-concordia","MB6_S17","IDS","IDS6",11,1.1,17.033,"error","experimenter began trial too early","skipped attention-getter"
+"1076","irl-concordia","MB6_S17","ADS","ADS6",12,7.01,18.042,"error","trial should have ended earlier",NA
+"1077","irl-concordia","MB6_S17","ADS","ADS7",13,4.57,8.815,"noerror",NA,NA
+"1078","irl-concordia","MB6_S17","IDS","IDS7",14,0.83,7.127,"noerror",NA,NA
+"1079","irl-concordia","MB6_S17","IDS","IDS8",15,5.81,16.966,"noerror",NA,NA
+"1080","irl-concordia","MB6_S17","ADS","ADS8",16,2.3,6.794,"noerror",NA,NA
+"1081","irl-concordia","MB6_S18","training","train2",-2,16.64,18.052,"noerror",NA,NA
+"1082","irl-concordia","MB6_S18","training","train1",-1,17.04,28.035,"noerror",NA,NA
+"1083","irl-concordia","MB6_S18","ADS","ADS5",1,16.27,18.039,"noerror",NA,NA
+"1084","irl-concordia","MB6_S18","IDS","IDS5",2,2.18,6.499,"noerror",NA,NA
+"1085","irl-concordia","MB6_S18","IDS","IDS7",3,7.83,11.495,"noerror",NA,NA
+"1086","irl-concordia","MB6_S18","ADS","ADS7",4,15.49,18.042,"noerror",NA,NA
+"1087","irl-concordia","MB6_S18","IDS","IDS1",5,13.67,18.037,"noerror",NA,NA
+"1088","irl-concordia","MB6_S18","ADS","ADS1",6,12.59,18.04,"error","trial should have ended earlier",NA
+"1089","irl-concordia","MB6_S18","IDS","IDS3",7,7.77,17.897,"noerror",NA,NA
+"1090","irl-concordia","MB6_S18","ADS","ADS3",8,13.48,18.021,"error","experimenter began trial too early",NA
+"1091","irl-concordia","MB6_S18","IDS","IDS2",9,4.6,9.096,"noerror",NA,NA
+"1092","irl-concordia","MB6_S18","ADS","ADS2",10,1.83,5.673,"error","experimenter ended trial too early",NA
+"1093","irl-concordia","MB6_S18","ADS","ADS4",11,2.05,5.434,"error","trial should have ended earlier",NA
+"1094","irl-concordia","MB6_S18","IDS","IDS4",12,11.12,18.036,"noerror",NA,NA
+"1095","irl-concordia","MB6_S18","ADS","ADS6",13,1.79,5.36,"noerror",NA,NA
+"1096","irl-concordia","MB6_S18","IDS","IDS6",14,2.16,7.248,"noerror",NA,NA
+"1097","irl-concordia","MB6_S18","ADS","ADS8",15,2.08,7.21,"noerror",NA,NA
+"1098","irl-concordia","MB6_S18","IDS","IDS8",16,1.02,5.712,"error","experimenter began trial too early",NA
+"1117","irl-concordia","MB6_S20","training","train1",-2,16.24,31.842,"noerror",NA,NA
+"1118","irl-concordia","MB6_S20","training","train2",-1,17.75,18.029,"noerror",NA,NA
+"1119","irl-concordia","MB6_S20","IDS","IDS5",1,15.75,18.045,"noerror",NA,NA
+"1120","irl-concordia","MB6_S20","ADS","ADS5",2,5.43,9.66,"noerror",NA,NA
+"1121","irl-concordia","MB6_S20","ADS","ADS7",3,15.38,18.043,"noerror",NA,NA
+"1122","irl-concordia","MB6_S20","IDS","IDS7",4,4.6,10.058,"noerror",NA,NA
+"1123","irl-concordia","MB6_S20","ADS","ADS1",5,5.75,9.383,"noerror",NA,NA
+"1124","irl-concordia","MB6_S20","IDS","IDS1",6,6.88,10.657,"noerror",NA,NA
+"1125","irl-concordia","MB6_S20","ADS","ADS3",7,14.06,18.052,"noerror",NA,NA
+"1126","irl-concordia","MB6_S20","IDS","IDS3",8,11.37,14.102,"noerror",NA,NA
+"1127","irl-concordia","MB6_S20","ADS","ADS2",9,10.22,18.049,"error","trial should have ended earlier",NA
+"1128","irl-concordia","MB6_S20","IDS","IDS2",10,9.44,15.566,"error","experimenter ended trial too early",NA
+"1129","irl-concordia","MB6_S20","IDS","IDS4",11,14.71,18.039,"noerror",NA,NA
+"1130","irl-concordia","MB6_S20","ADS","ADS4",12,15.17,18.035,"noerror",NA,NA
+"1131","irl-concordia","MB6_S20","IDS","IDS6",13,3.38,7.356,"noerror",NA,NA
+"1132","irl-concordia","MB6_S20","ADS","ADS6",14,13.4,18.044,"noerror",NA,NA
+"1133","irl-concordia","MB6_S20","IDS","IDS8",15,3.11,9.603,"error","trial should have ended earlier",NA
+"1134","irl-concordia","MB6_S20","ADS","ADS8",16,0.27,14.915,"noerror",NA,NA
+"1243","irl-concordia","MB6_S27","training","train1",-2,12.7,15.412,"noerror",NA,NA
+"1244","irl-concordia","MB6_S27","training","train2",-1,8.56,16.033,"noerror",NA,NA
+"1245","irl-concordia","MB6_S27","IDS","IDS5",1,4.97,15.067,"noerror",NA,NA
+"1246","irl-concordia","MB6_S27","ADS","ADS5",2,8.76,16.483,"noerror",NA,NA
+"1247","irl-concordia","MB6_S27","ADS","ADS7",3,4.1,15.608,"noerror",NA,NA
+"1248","irl-concordia","MB6_S27","IDS","IDS7",4,14.92,18.045,"noerror",NA,NA
+"1249","irl-concordia","MB6_S27","ADS","ADS1",5,4.35,9.03,"noerror",NA,NA
+"1250","irl-concordia","MB6_S27","IDS","IDS1",6,5.27,14.88,"error","trial should have ended earlier",NA
+"1251","irl-concordia","MB6_S27","ADS","ADS3",7,12.48,18.045,"noerror",NA,NA
+"1252","irl-concordia","MB6_S27","IDS","IDS3",8,4.67,9.557,"noerror",NA,NA
+"1253","irl-concordia","MB6_S27","ADS","ADS2",9,0.96,6.353,"noerror",NA,NA
+"1254","irl-concordia","MB6_S27","IDS","IDS2",10,7.59,16.095,"noerror",NA,NA
+"1255","irl-concordia","MB6_S27","IDS","IDS4",11,2.91,9.4,"noerror",NA,NA
+"1256","irl-concordia","MB6_S27","ADS","ADS4",12,3.54,7.97,"noerror",NA,NA
+"1257","irl-concordia","MB6_S27","IDS","IDS6",13,2.68,7.049,"noerror",NA,NA
+"1258","irl-concordia","MB6_S27","ADS","ADS6",14,3.06,6.884,"noerror",NA,NA
+"1259","irl-concordia","MB6_S27","IDS","IDS8",15,0,6.079,"error","experimenter began trial too early",NA
+"1260","irl-concordia","MB6_S27","ADS","ADS8",16,6.3,14.362,"noerror",NA,NA
+"1369","irl-concordia","MB6_S34","training","train2",-2,15.41,18.041,"noerror",NA,NA
+"1370","irl-concordia","MB6_S34","training","train1",-1,12.5,18.048,"noerror",NA,NA
+"1371","irl-concordia","MB6_S34","ADS","ADS5",1,16.19,18.055,"noerror",NA,NA
+"1372","irl-concordia","MB6_S34","IDS","IDS5",2,11.98,18.037,"noerror",NA,NA
+"1373","irl-concordia","MB6_S34","IDS","IDS7",3,7,12.197,"noerror",NA,NA
+"1374","irl-concordia","MB6_S34","ADS","ADS7",4,6.52,10.335,"error","experimenter ended trial too early",NA
+"1375","irl-concordia","MB6_S34","IDS","IDS1",5,12.64,18.027,"noerror",NA,NA
+"1376","irl-concordia","MB6_S34","ADS","ADS1",6,4.79,8.267,"error","experimenter ended trial too early",NA
+"1377","irl-concordia","MB6_S34","IDS","IDS3",7,7.57,16.017,"noerror",NA,NA
+"1378","irl-concordia","MB6_S34","ADS","ADS3",8,8.53,17.304,"noerror",NA,NA
+"1379","irl-concordia","MB6_S34","IDS","IDS2",9,4.63,17.919,"error","trial should have ended earlier",NA
+"1380","irl-concordia","MB6_S34","ADS","ADS2",10,1.91,7.035,"noerror",NA,NA
+"1381","irl-concordia","MB6_S34","ADS","ADS4",11,1.37,8.499,"error","trial should have ended earlier",NA
+"1382","irl-concordia","MB6_S34","IDS","IDS4",12,5.01,18.04,"noerror",NA,NA
+"1383","irl-concordia","MB6_S34","ADS","ADS6",13,1.25,5.612,"noerror",NA,NA
+"1384","irl-concordia","MB6_S34","IDS","IDS6",14,4.96,18.044,"error","trial should have ended earlier",NA
+"1385","irl-concordia","MB6_S34","ADS","ADS8",15,2.21,9.158,"noerror",NA,NA
+"1386","irl-concordia","MB6_S34","IDS","IDS8",16,4.64,10.514,"error","experimenter ended trial too early",NA
