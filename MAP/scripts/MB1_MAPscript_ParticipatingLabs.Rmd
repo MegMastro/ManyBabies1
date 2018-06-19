@@ -30,8 +30,6 @@ library(ggmap)
 ```{r}
 clean_wide_dataset_labs <- wide_dataset_labs[,c("labname", "University", "CityorCountry", "Longitude","Latitude")]
 
-
-
 ```
 # get country from long lat coordinates
 ```{r}
@@ -72,6 +70,11 @@ clean_wide_dataset_labs$country = as.character(clean_wide_dataset_labs$country.b
 clean_wide_dataset_labs$country[clean_wide_dataset_labs$country.byfunc =="United Kingdom"] = "UK"
 clean_wide_dataset_labs$country[clean_wide_dataset_labs$country.byfunc =="United States of America"] = "USA"
 
+#remove cityorcountry column in city datafram
+
+#merge with cities dataframe
+cities_and_lat_log <- clean_wide_dataset_labs %>%
+  full_join(cities_dataframe, by = c("University"))
 ```
 #count of frequency of countries participating
 ```{r}
@@ -111,11 +114,19 @@ cities_dataframe <- MBlabs.Nlabs_cities %>%
   full_join(country_shapes, by = c("city")) %>%
   mutate(MBlabs.Nlabs_cities = ifelse(is.na(city), 0, city))
 
+#renaming cities column to frequency
+cities_dataframe <- cities_dataframe %>%
+  rename(frequency = cities) 
+
+#removing unnecesary columns
+cities_dataframe <- cities_dataframe [,c("city", "frequency")]
+
+
 #mapping the world using ggplot
 ggplot() + 
   geom_polygon(data = world_data_participating_labs,  aes(x = long, y = lat, group = group, fill = Nlabs)) + coord_fixed(1.3) +
-  scale_fill_continuous(low="gray76", high="firebrick", guide="colorbar",na.value="gray96") +
-  geom_point(data = MBlabs.Nlabs_cities, aes(x = city))
+  scale_fill_continuous(low="gray85", high="darkred", guide="colorbar",na.value="gray") + theme_bw()+
+  geom_point(data = cities_and_lat_log, aes(x = Longitude, y = Latitude), size = .25)
 
 ```
 
