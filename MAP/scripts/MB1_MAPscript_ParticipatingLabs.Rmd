@@ -71,8 +71,6 @@ clean_wide_dataset_labs$country = as.character(clean_wide_dataset_labs$country.b
 clean_wide_dataset_labs$country[clean_wide_dataset_labs$country.byfunc =="United Kingdom"] = "UK"
 clean_wide_dataset_labs$country[clean_wide_dataset_labs$country.byfunc =="United States of America"] = "USA"
 
-#remove cityorcountry column in city datafram
-
 #merge with cities dataframe
 cities_and_lat_log <- clean_wide_dataset_labs %>%
   full_join(cities_dataframe, by = c("University")) %>%
@@ -124,10 +122,8 @@ cities_dataframe <- MBlabs.Nlabs_cities %>%
 cities_dataframe <- cities_dataframe %>%
   rename(frequency = cities) 
 
-#removing unnecesary columns
+#keeping only necesary columns
 cities_dataframe <- cities_dataframe [,c("city", "frequency")]
-
-
 
 ```
 
