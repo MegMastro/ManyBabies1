@@ -78,7 +78,7 @@ cities_and_lat_log <- clean_wide_dataset_labs %>%
   full_join(cities_dataframe, by = c("University")) %>%
   distinct(labname, .keep_all = TRUE) %>% #get rid of labs repeated twice
   group_by(City) %>%
-  mutate(n_in_city = length(City)) %>% # Get number of labs/city
+  mutate(n_in_city = as.integer(length(City))) %>% # Get number of labs/city
   arrange(n_in_city) %>%
   distinct(City, .keep_all = TRUE)
 ```
@@ -137,8 +137,9 @@ cities_dataframe <- cities_dataframe [,c("city", "frequency")]
 mb1_map <- ggplot() + 
   geom_polygon(data = world_data_participating_labs,  
                aes(x = long, y = lat, group = group, fill = Nlabs)) +                   coord_fixed(1.3) +
-  scale_fill_continuous(low="gray85", high="darkred", guide="colorbar",na.value="gray", name = "Number labs") + 
-  geom_point(data = cities_and_lat_log, pch = 21, aes(x = Longitude, y = Latitude, fill = n_in_city)) +
+  scale_fill_continuous(low="gray85", high="darkred", guide="colorbar",na.value="gray", name = "Labs/country") + 
+  geom_point(data = cities_and_lat_log, pch = 21, aes(x = Longitude, y = Latitude, size = n_in_city)) +
+  scale_radius(name = "Labs/city", range = c(1,3), breaks = c(1,2,3), labels = c(1,2,3)) +
   ggtitle("Geography of ManyBabies1 Labs") +
   theme_bw() + 
   theme(panel.grid.major = element_blank(), 
