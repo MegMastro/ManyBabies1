@@ -64,13 +64,12 @@ clean_wide_dataset_labs <- wide_dataset_labs %>%
 clean_wide_dataset_labs$country <- as.character(coords2country(clean_wide_dataset_labs[, c("Longitude", "Latitude")])) 
 
 clean_wide_dataset_labs <- clean_wide_dataset_labs %>%
-  mutate(country = recode(country, "United Kingdom" = "UK", "United States of America" = "USA"))
+  mutate(country = recode(country, "United Kingdom" = "UK", "United States of America" = "USA")) #World code naming of countries and lab dataset names did not match
 
 clean_wide_dataset_labs$country[clean_wide_dataset_labs$University =="University of Liverpool"] ="UK" #Lab forgot to put in country
 
 
 ```
-
 
 # merging with cities dataframe
 ```{r}
@@ -103,12 +102,10 @@ MBlabs.Nlabs_cities = cities_dataframe %>%
 
 
 ```{r}
-
 # Get world data frame
 country_shapes <- map_data("world") %>%
     rename(country = region) %>%
     rename (city = subregion)
-
 
 # some basic checks
 print("these countries were found in the world_data but not in manybabies data")
