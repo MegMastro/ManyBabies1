@@ -1,39 +1,31 @@
 ---
-title: "R Notebook"
+title: "ManyBabies1 Participating Labs Map"
+author: "Meghan Mastroberardino, with the help of Esther Schott and Krista Byers-Heinlein: Concordia Infant Research Lab"
 output: html_notebook
 ---
-#check working directory
+
+This is a map of labs countries and cities that have participated in ManyBabies 1
+
+#cleanworkspace and load required packages
 ```{r}
-getwd()
 rm(list=ls()) # Clear workspace
-```
-#importing dataset
-```{r}
-#importing participating las spreadsheet
-wide_dataset_labs <- read.delim("../data/ManyBabiesQuestionnaireSpreadsheetAuthoritativeMay22-2018cleaned.csv",sep = ",")
-
-cities_dataframe <- read.delim("../data/ManyBabies_participatinglabs_cities_dataframe.csv", sep = ",")
-```
-
-#loading tidyverse
-```{r}
-#loading packages
 library(tidyverse)
 library(rworldmap)
 library(ggmap)
-#library(sp)
-#library(maps)
-#library(maptools)
-#library(sf)
-#library(rgeos)
 ```
-#cleaning dataset to keep only relevant columns
+
+#importing dataset
 ```{r}
-clean_wide_dataset_labs <- wide_dataset_labs[,c("labname", "University", "CityorCountry", "Longitude","Latitude")]
+#importing participating las spreadsheet
+wide_dataset_labs <- read.delim("../data/ManyBabiesQuestionnaireSpreadsheetAuthoritativeMay22-2018cleaned.csv",sep = ",") # Laboratory questionnaire - hand clean by Melanie
+
+cities_dataframe <- read.delim("../data/ManyBabies_participatinglabs_cities_dataframe.csv", sep = ",") # Dataframe linking University names to their cities - must be updated by hand
 
 ```
-# get country from long lat coordinates
+
+# function to get country from longitude and latitude coordinates
 ```{r}
+# Code from: https://stackoverflow.com/questions/41105042/using-coords2country-function-in-r-on-exclusive-economic-zones-not-country-bound
 
 # The single argument to this function, points, is a data.frame in which:
 #   - column 1 contains the longitude in degrees
@@ -61,17 +53,28 @@ coords2country = function(points)
   #indices$REGION   # returns the continent (7 continent model)
 }
 ```
-# get country 
+
+
+# looking up country info and cleaning dataset
+```{r, , echo = FALSE}
+
+clean_wide_dataset_labs <- wide_dataset_labs %>%
+  select(labname, University, CityorCountry, Longitude, Latitude)
+
+clean_wide_dataset_labs$country <- as.character(coords2country(clean_wide_dataset_labs[, c("Longitude", "Latitude")])) 
+
+clean_wide_dataset_labs <- clean_wide_dataset_labs %>%
+  mutate(country = recode(country, "United Kingdom" = "UK", "United States of America" = "USA"))
+
+clean_wide_dataset_labs$country[clean_wide_dataset_labs$University =="University of Liverpool"] ="UK" #Lab forgot to put in country
+
+
+```
+
+
+# merging with cities dataframe
 ```{r}
-clean_wide_dataset_labs$country.byfunc = coords2country(clean_wide_dataset_labs[, c("Longitude", "Latitude")])
 
-clean_wide_dataset_labs$country.byfunc[clean_wide_dataset_labs$University =="University of Liverpool"] ="United Kingdom"
-
-clean_wide_dataset_labs$country = as.character(clean_wide_dataset_labs$country.byfunc)
-clean_wide_dataset_labs$country[clean_wide_dataset_labs$country.byfunc =="United Kingdom"] = "UK"
-clean_wide_dataset_labs$country[clean_wide_dataset_labs$country.byfunc =="United States of America"] = "USA"
-
-#merge with cities dataframe
 cities_and_lat_log <- clean_wide_dataset_labs %>%
   full_join(cities_dataframe, by = c("University")) %>%
   distinct(labname, .keep_all = TRUE) %>% #get rid of labs repeated twice
@@ -80,20 +83,24 @@ cities_and_lat_log <- clean_wide_dataset_labs %>%
   arrange(n_in_city) %>%
   distinct(City, .keep_all = TRUE)
 ```
-#count of frequency of countries participating
+
+# count of frequency of countries participating
 ```{r}
 MB.Nlabs = clean_wide_dataset_labs %>%
   group_by(country) %>% 
  summarise(Nlabs= n())
   
 ```
-#count of frequency of cities particpating
+
+# count of frequency of cities particpating
 ```{r}
 MBlabs.Nlabs_cities = cities_dataframe %>%
   group_by(City) %>%
   summarise(cities = n()) %>%
   rename(city = City)
 ```
+
+
 
 ```{r}
 
@@ -102,6 +109,8 @@ country_shapes <- map_data("world") %>%
     rename(country = region) %>%
     rename (city = subregion)
 
+
+# some basic checks
 print("these countries were found in the world_data but not in manybabies data")
 setdiff(country_shapes$country,MB.Nlabs$country)
 print("these countries were NOT found in the world data but in manybabies data")
@@ -123,11 +132,12 @@ cities_dataframe <- cities_dataframe %>%
   rename(frequency = cities) 
 
 #keeping only necesary columns
-cities_dataframe <- cities_dataframe [,c("city", "frequency")]
+cities_dataframe <- cities_dataframe %>%
+  select(city, frequency)
 
 ```
 
-#mapping the world using ggplot
+# Map data by country and city using ggplot
 ```{r}
 
 mb1_map <- ggplot() + 
@@ -147,6 +157,7 @@ mb1_map <- ggplot() +
         axis.ticks = element_blank(),
         axis.title = element_blank())
 
+mb1_map
 
 ```
 
@@ -156,16 +167,3 @@ mb1_map <- ggplot() +
 ggsave("../figures/mb1_map.pdf", mb1_map, device = "pdf", width = 11, height = 6)
 
 ```
-
-```{r}
-
-
-
-
-```
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
-
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
-
-The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
-
