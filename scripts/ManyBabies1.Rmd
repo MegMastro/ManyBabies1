@@ -189,9 +189,9 @@ participants_bi <- participants %>%
 # Write final monolingual participants to file
 ```{r}
 
-write.csv(participants_mono, "../data/irl-concordia_Monolingual_Participant_Info.csv")
+write_csv(participants_mono, "../data/irl-concordia_Monolingual_Participant_Info.csv")
 
-write.csv(participants_bi, "../data/irl-concordia_Bilingual_Participant_Info.csv")
+write_csv(participants_bi, "../data/irl-concordia_Bilingual_Participant_Info.csv")
 
 ```
 
@@ -209,9 +209,9 @@ final_dataset_bilinguals <- joined_dataset_clean[joined_dataset_clean$subid %in%
 # Write final datasets to files
 ```{r}
 
-write.csv(final_dataset_monolinguals, "../data/irl-concordia_Monolingual_Trial_Data.csv")
+write_csv(final_dataset_monolinguals, "../data/irl-concordia_Monolingual_Trial_Data.csv")
 
-write.csv(final_dataset_bilinguals, "../data/irl-concordia_Bilingual_Trial_Data.csv")
+write_csv(final_dataset_bilinguals, "../data/irl-concordia_Bilingual_Trial_Data.csv")
 
 
 ```
